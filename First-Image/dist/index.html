@@ -1,95 +1,92 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-full">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-gray-700 flex justify-center h-full items-center">
-    <div class="bg-white shadow-lg sm:h-full w-full md:w-1/2 lg:w-1/3">
+<body class="bg-gray-700 flex justify-center items-center h-screen">
+    <div class="bg-white shadow-lg h-full w-full sm:h-screen sm:w-3/4 md:h-screen md:w-1/2 lg:w-1/2 lg:h-full tel:w-screen tel:h-full">
         <div class="w-full h-20 bg-gray-300"></div>
         <button class="pt-3 pl-3 bg-transparent inline-flex items-end">
-            <img class="w-5" src="../arrow.png" alt="">
+            <img class="w-5" src="../arrow.png" alt=""> 
         </button>
         <button class="pt-8 pr-5 bg-transparent float-right">
             <img class="w-8" src="../menu.png" alt="">
         </button>
-        <div class="pt-10 text-center">
-            <h1 class="text-4xl font-serif font-extrabold text-slate-800">CAGNOTTES</h1>
+        <div class="grid grid-cols-1 grid-rows-2 gap-2 self-center">
+            <h1 class="text-5xl font-sans font-bold text-slate-800 text-center">CAGNOTTES</h1>
+            <span class="text-lg font-sans text-black text-center">
+                Créer un projet
+                <img class="w-5 inline-block" src="../+.png" alt="">
+            </span>
         </div>
-        <p class="text-lg font-serif text-gray-400 text-center relative right-4">Créer un projet</p>
-        <img class="w-5 mx-auto relative left-16 bottom-6" src="../+.png" alt="">
-        <h3 class="text-4xl font-sans font-bold text-slate-800 text-center float-left sm:float-left sm:relative sm:left-24 sm:bottom-10">961€</h3>
-        <h2 class="text-4xl font-sans font-bold text-slate-800 text-center float-right relative right-24 bottom-10">618€</h2>
-        <p class="text-base font-serif text-slate-800 text-center float-right relative left-4">Montant Disponible</p>
-        <p class="text-base font-serif text-slate-800 text-center sm:relative sm:float-left sm:left-0 sm:right-8">Montant Total</p>
-        <p class="text-base font-sans text-slate-800 text-center float-right relative top-5 left-28">Utiliser</p>
-        <button class="hover:border-b-2 hover:border-gray-900 text-center sm:float-left sm:relative sm:top-5 sm:right-24 sm:pt-1 sm:pb-4 sm:pr-5">
-            <p class="text-xs font-sans text-gray-400 sm:relative sm:right-2">Voir les transactions</p>
-        </button>
-        <img class="w-5 mx-auto relative float-right left-48 top-6" src="../+.png" alt="">
-        <div class="pt-20">
+        <div class="flex justify-center gap-48">
+            <h3 class="text-5xl font-sans font-extrabold text-black tel:text-base sm:text-xl">961€</h3> 
+            <h2 class="text-5xl font-sans font-extrabold text-black tel:text-base sm:text-xl">618€</h2>
+        </div>
+        <div class="flex justify-center gap-36">
+            <p class="text-lg font-sans text-black text-right pl-1">Montant Total</p>
+            <p class="text-lg font-sans text-black text-center">Montant Disponible</p>
+        </div>
+        <div class="flex justify-center gap-56 text-left">
+            <button class="hover:border-b-2 hover:border-gray-900 text-center pb-3">
+                <p class="text-xs font-sans text-black text-center">Voir les transactions</p>
+            </button>
+            <span class="text-base font-sans text-black text-center">
+                Utiliser
+                <img class="w-5 inline-block" src="../+.png" alt="">
+            </span>
+        </div>
+        <div class="pt-5">
             <div class="montant">
-                <div class="mx-auto flex justify-center items-center">
-                    <select id="select" name="select" class="w-40 px-4 rounded-lg bg-white border border-gray-800 focus:ring-blue-400 focus:border-blue-300 focus:outline-none h-6 sm:relative sm:top-2 sm:left-5 sm:right-28">
-                        <option value="option1"></option>-
-                        <option value="option2">Ouvert</option>
-                        <option value="option3">Brouillon</option>
-                        <option value="option4">Fermé</option>
-                    </select>
-                    <p class="text-base font-sans text-slate-800 text-center sm:relative sm:left-48 sm:top-2 sm:right-0 sm:mx-auto">8€</p>
-                    <p class="text-base font-sans text-slate-800 sm:relative sm:top-2 sm:right-52">Jasmine Love</p>
-                </div>
-        </div>
-        <div class="montant">
-            <div class="mx-auto flex justify-center items-center">
-                <select id="select" name="select" class="w-40 px-4 rounded-lg bg-white border border-gray-800 focus:ring-blue-400 focus:border-blue-300 focus:outline-none h-6 sm:relative sm:top-2 sm:left-5 sm:right-28">
-                    <option value="option1"></option>
-                    <option value="option2">Ouvert</option>
-                    <option value="option3">Brouillon</option>
-                    <option value="option4">Fermé</option>
-                </select>
-                <p class="text-base font-sans text-slate-800 text-center sm:relative sm:left-40 sm:top-2 sm:right-0 sm:mx-auto">410€</p>
-                <p class="text-base font-sans font-bold text-slate-800 sm:relative sm:top-2 sm:right-64">Ema</p>
-            </div>
-        </div>
-            <div class="montant">
-                <div class="mx-auto flex justify-center items-center">
-                    <select id="select" name="select" class="w-40 px-4 rounded-lg bg-white border border-gray-800 focus:ring-blue-400 focus:border-blue-300 focus:outline-none h-6 sm:relative sm:top-2 sm:left-5 sm:right-28">
-                        <option value="option1"></option>
-                        <option value="option2">Ouvert</option>
-                        <option value="option3">Brouillon</option>
-                        <option value="option4">Fermé</option>
-                    </select>
-                    <p class="text-base font-sans text-slate-800 text-center sm:relative sm:left-44 sm:top-2 sm:right-0 sm:mx-auto">36€</p>
-                    <p class="text-base font-sans font-bold text-slate-800 sm:relative sm:top-2 sm:right-60">Lololova</p>
+                <div class="grid grid-cols-3 grid-rows-1 gap-8 text-center pl-4 pt-2">
+                    <div class="w-40 sm:w-28 px-4 rounded-lg bg-gray-50 border h-6 text-left">
+                        <p class="text-base font-sans text-black">Ouvert</p>
+                    </div>
+                    <p class="text-base font-sans text-slate-800 text-left pl-1">Jasmine Love</p>
+                    <p class="text-base font-sans text-slate-800 text-right pr-3">8€</p>
                 </div>
             </div>
             <div class="montant">
-                <div class="mx-auto flex justify-center items-center">
-                    <select id="select" name="select" class="w-40 px-4 rounded-lg bg-white border border-gray-800 focus:ring-blue-400 focus:border-blue-300 focus:outline-none h-6 sm:relative sm:top-2 sm:left-5 sm:right-28">
-                        <option value="option1"></option>
-                        <option value="option2">Ouvert</option>
-                        <option value="option3">Brouillon</option>
-                        <option value="option4">Fermé</option>
-                    </select>
-                    <p class="text-base font-sans text-slate-800 text-center sm:relative sm:left-40 sm:top-2 sm:right-0 sm:mx-auto">12€</p>
-                    <p class="text-base font-sans font-bold text-slate-800 sm:relative sm:top-2 sm:right-64">Coco</p>
+                <div class="grid grid-cols-3 grid-rows-1 gap-8 text-center pl-4 pt-2">
+                    <div class="w-40 px-4 rounded-lg bg-gray-50 border h-6 text-left">
+                        <p class="text-base font-sans text-black text-left">Ouvert</p>
+                    </div>
+                    <p class="text-base font-sans font-bold text-slate-800 text-left pl-2">Ema</p>
+                    <p class="text-base font-sans text-slate-800 text-right pr-3">410€</p>
                 </div>
             </div>
             <div class="montant">
-                <div class="mx-auto flex justify-center items-center">
-                    <select id="select" name="select" class="w-40 px-4 rounded-lg bg-white border border-gray-800 focus:ring-blue-400 focus:border-blue-300 focus:outline-none h-6 sm:relative sm:top-2 sm:left-5 sm:right-28">
-                        <option value="option1"></option>
-                        <option value="option2">Ouvert</option>
-                        <option value="option3">Brouillon</option>
-                        <option value="option4">Fermé</option>
-                    </select>
-                    <p class="text-base font-sans text-slate-800 text-center sm:relative sm:left-40 sm:top-2 sm:right-0 sm:mx-auto">125€</p>
-                    <p class="text-base font-sans font-bold text-slate-800 sm:relative sm:top-2 sm:right-64">Coco</p>
+                <div class="grid grid-cols-3 grid-rows-1 gap-8 text-center pl-4 pt-2">
+                    <div class="w-40 px-4 rounded-lg bg-gray-50 border h-6 text-left">
+                        <p class="text-base font-sans text-black text-left">Brouillon</p>
+
+                    </div>
+                    <p class="text-base font-sans font-bold text-slate-800 text-left pl-2">Lololova</p>
+                    <p class="text-base font-sans text-slate-800 text-right pr-3">36€</p>
+                </div>
+            </div>
+            <div class="montant">
+                <div class="grid grid-cols-3 grid-rows-1 gap-8 text-center pl-4 pt-2">
+                    <div class="w-40 px-4 rounded-lg bg-gray-50 border h-6 text-left">
+                        <p class="text-base font-sans text-black text-left">Fermé</p>
+                    </div>
+                    <p class="text-base font-sans font-bold text-slate-800 text-left pl-2">Coco</p>
+                    <p class="text-base font-sans text-slate-800 text-right pr-3">12€</p>
+                </div>
+            </div>
+            <div class="montant">
+                <div class="grid grid-cols-3 grid-rows-1 gap-8 text-center pl-4 pt-2">
+                    <div class="w-40 px-4 rounded-lg bg-gray-50 border h-6 text-left">
+                        <p class="text-base font-sans text-black text-left">Fermé</p>
+                </div>
+                    <p class="text-base font-sans font-bold text-slate-800 text-left pl-2">Coco</p>
+                    <p class="text-base font-sans text-slate-800 text-right pr-3">125€</p>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 </html>

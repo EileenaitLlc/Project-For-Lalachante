@@ -562,10 +562,6 @@ video {
   right: 1rem;
 }
 
-.top-8 {
-  top: 2rem;
-}
-
 .float-right {
   float: right;
 }
@@ -871,24 +867,8 @@ video {
     top: 2rem;
   }
 
-  .sm\:bottom-6 {
-    bottom: 1.5rem;
-  }
-
-  .sm\:right-8 {
-    right: 2rem;
-  }
-
   .sm\:top-9 {
     top: 2.25rem;
-  }
-
-  .sm\:left-32 {
-    left: 8rem;
-  }
-
-  .sm\:right-24 {
-    right: 6rem;
   }
 
   .sm\:float-right {
@@ -919,10 +899,6 @@ video {
     width: 9rem;
   }
 
-  .sm\:w-40 {
-    width: 10rem;
-  }
-
   .sm\:pt-1 {
     padding-top: 0.25rem;
   }
@@ -941,12 +917,12 @@ video {
     width: 50%;
   }
 
-  .md\:w-40 {
-    width: 10rem;
-  }
-
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
   }
 }
 
