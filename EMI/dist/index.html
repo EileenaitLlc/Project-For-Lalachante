@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-gray-700 flex justify-center h-full items-center">
+    <div class="bg-white shadow-lg h-full w-full sm:w-full md:w-3/5 lg:w-3/6 xl:w-2/6 2xl:w-2/6 4k:w-2/5">
+        <div class="w-full h-16 bg-gray-300"></div>
+        <button class="pt-3 pl-3 bg-transparent inline-flex items-end md:relative md:left-5 md:top-2">
+            <img class="w-5" src="../arrow.png" alt="">
+        </button>
+        <button class="pt-8 pr-5 bg-transparent float-right">
+            <img class="w-8" src="../menu.png" alt="">
+        </button>
+        <div class="pt-10 pl-10 text-left">
+            <h2 class="text-xl font-display font-bold text-slate-800">Expérience</h2>
+            <h1 class="text-5xl font-display font-bold text-slate-800 tel:text-4xl md:text-5xl lg:text-6xl">EMI</h1>
+        </div>
+        <p class="text-5xl font-display font-bold text-slate-800 text-left tel:ml-9 tel:text-4xl md:text-5xl lg:text-5xl pt-6">50€</p>
+        <p class="text-base font-display text-slate-800 text-left relative tel:text-sm tel:ml-28 md:ml-32 lg:ml-32 tel:bottom-6">Modifier le montant</p>
+        <div>
+            <div class="float-right relative tel:right-3 sm:right-10 md:right-12 lg:right-14 xl:right-14">
+                <label for="toggle" class="relative inline-block w-10 h-4 bg-gray-400 rounded-full cursor-pointer">
+                    <input type="checkbox" id="toggle" class="sr-only">
+                    <div class="absolute left-1 w-4 h-4 bg-white rounded-full transform transition-transform duration-300 ease-in-out"></div>
+                </label>
+            </div>
+            <p class="text-sm font-display text-slate-800 tel:ml-9">Masquer le montant</p>
+            <p class="text-sm font-display text-slate-800 tel:pt-2 tel:ml-9 telL:relative">Rendre ma participation anonyme</p>
+            <div class="float-right relative tel:bottom-4 tel:right-3 sm:right-10 md:right-12 lg:right-14 xl:right-14">
+                <label for="toggle" class="relative inline-block w-10 h-4 bg-gray-400 rounded-full cursor-pointer">
+                    <input type="checkbox" id="toggle" class="sr-only">
+                    <div class="relative left-1 w-4 h-4 bg-white rounded-full transform transition-transform duration-300 ease-in-out"></div>
+                </label>
+            </div>
+        </div>
+        <div class="pt-14">
+            <h3 class="text-3xl font-bold font-display text-slate-800 text-center sm:right-4">Mes informations</h3>
+            <div class="mb-4 flex-1 md:flex-col justify-center items-center text-center pt-5">
+                <label for="username" class="block text-gray-600 mb-2"></label>
+                <input type="text" id="username" name="username" placeholder="Prénom" class="border rounded shadow-inner py-2 px-3 text-gray-700 w-3/4 focus:shadow-outline">
+            </div>
+            <div class="mb-4 text-center">
+                <label for="password" class="block text-gray-600 mb-2"></label>
+                <input type="text" id="username" name="username" placeholder="Nom" class="border rounded shadow-inner py-2 px-3 text-black w-3/4 focus:shadow-outline">
+            </div>
+            <div class="mb-4 text-center">
+                <label for="password" class="block text-gray-600 mb-2"></label>
+                <input type="text" id="username" name="username" placeholder="Email" class="border rounded shadow-inner py-2 px-3 text-black w-3/4 focus:shadow-outline">
+            </div>
+            <div class="mb-4 text-left relative tel:ml-10 telL:ml-16 sm:ml-24 md:ml-16 lg:ml-16 xl:ml-16">
+                <label for="password" class="block text-gray-600 mb-2"></label>
+                <input type="text" id="username" name="username" placeholder="Date de naissance" class="border rounded shadow-inner py-2 px-3 w-1/3 tel:w-1/2 telL:w-2/4 sm:w-4/6 tel:text-sm text-black focus:shadow-outline">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-gray-300 text-black px-7 py-2 rounded hover:bg-gray-600">Soutenir</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

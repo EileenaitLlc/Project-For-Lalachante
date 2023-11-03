@@ -12,7 +12,11 @@ module.exports = {
       '2xl': '1536px',
       '4k': '2560px',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        display: 'Montserrat, sans',
+      },
+    }
   },
   plugins: [],
 }
