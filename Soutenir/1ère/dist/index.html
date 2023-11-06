@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-700 flex justify-center h-full items-center">
+    <div class="bg-white shadow-lg h-full w-full tel:w-full tel:h-full telL:w-full sm:w-full md:w-3/5 lg:w-3/6 xl:w-2/6 2xl:w-2/6 4k:w-2/5">
+        <div class="w-full h-20 bg-gray-300"></div>
+        <div class="pt-10 text-center">
+            <h1 class="text-5xl font-sans font-bold text-slate-800">Soutenir</h1>
+        </div>
+        <div class="grid grid-cols-1 grid-rows-2 gap-0.5">
+            <p class="text-lg font-serif font-bold text-black text-center tel:text-base sm:text-xl lg:text-lg xl:text-lg 2xl:text-lg">Vous souhaitez soutenir</p>
+            <p class="text-base font-sans text-black text-center relative tel:right-16 tel:text-xs md:right-24 lg:right-20 lg:text-sm xl:text-sm 2xl:text-sm">Lala Cause</p>
+        </div>
+        <div class="bg-white h-52 tel:w-72 tel:ml-5 telL:left-10 sm:left-28 md:left-7 sm:w-96 sm:h-52 telL:w-72 lg:w-5/6 xl:h-56 text-center relative tel:top-20 rounded-md border border-gray-200 ml-2">
+            <div class="flex">
+                <div class="bg-gray-300 w-28 h-36 telL:w-28 sm:w-40 sm:h-32 md:w-40 md:h-36 xl:w-32 xl:h-40 relative mt-3 ml-2"></div>
+                <div class="tel:mt-3 relative">
+                    <p class="text-base font-sans font-bold text-black text-center relative tel:text-sm tel:right-8 lg:text-base xl:text-left xl:left-4 xl:text-base 2xl:text-base">Lala Cause</p>
+                    <p class="text-base font-sans text-black text-center relative tel:text-xs tel:top-0 tel:left-2 lg:text-left lg:text-sm lg:right-5 xl:text-sm 2xl:text-sm">ipsum dolor sit amet sectetu.</p>
+                    <div class="grid grid-cols-2 grid-rows-1 gap-1 relative tel:top-6 tel:right-8">
+                        <p class="text-2xl font-sans font-bold text-slate-800 text-right tel:text-xl lg:text-xl xl:text-xl 2xl:text-xl">35€</p>
+                        <p class="text-sm font-sans text-slate-800 text-left relative tel:text-xs tel:top-2 lg:text-sm xl:text-sm 2xl:text-sm">Récoltés</p>
+                    </div>
+                    <p class="text-sm font-sans text-slate-800 text-center relative tel:text-xs tel:top-8 tel:right-5 lg:text-sm xl:text-sm 2xl:text-sm">Date: 21/02/2023</p>
+                    <p class="text-sm font-sans text-slate-800 text-center relative tel:text-xs tel:top-10 tel:right-9 lg:text-sm xl:text-sm 2xl:text-sm">Type: Cause</p>
+                    <button id="heartButton" class="relative focus:outline-none tel:right-0 tel:bottom-0 telL:left-0 md:left-0 md:top-4 float-right">
+                        <span class="heart text-3xl text-gray-400 transition duration-300 transform hover:scale-110 active:text-red-500 active:scale-100">&hearts;</span>
+                    </button>
+                    <script>
+                        const heartButton = document.getElementById('heartButton');
+                        const heart = heartButton.querySelector('.heart');
+                        let isFilled = false;
+
+                        heartButton.addEventListener('click', () => {
+                            isFilled = !isFilled;
+                            if (isFilled) {
+                                heart.classList.add('heart-filled');
+                            } else {
+                                heart.classList.remove('heart-filled');
+                            }
+                        });
+                    </script>
+                    <button class="hover:bg-gray-700 bg-gray-500 pl-2 pr-1 rounded-md text-center float-right relative tel:right-14 tel:top-14">
+                        <p class="text-sm font-sans text-black tel:text-xs lg:text-sm xl:text-sm 2xl:text-sm">Voir la page</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="bg-gray-400 text-black px-10 py-2 rounded hover:bg-gray-600 relative sm:px-8 tel:top-36 lg:px-10 xl:px-12">Je soutiens</button>
+        </div>
+    </div>
+</body>
+</html>
