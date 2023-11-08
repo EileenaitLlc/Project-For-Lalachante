@@ -35,6 +35,20 @@
                         <button id="heartButton" class="relative focus:outline-none tel:bottom-11 tel:left-8 lg:bottom-10 lg:left-16 float-right">
                             <span class="heart text-3xl text-gray-400 transition duration-300 transform hover:scale-110 active:text-red-500 active:scale-100">&hearts;</span>
                         </button>
+                        <script>
+                            const heartButton = document.getElementById('heartButton');
+                            const heart = heartButton.querySelector('.heart');
+                            let isFilled = false;
+    
+                            heartButton.addEventListener('click', () => {
+                                isFilled = !isFilled;
+                                if (isFilled) {
+                                    heart.classList.add('heart-filled');
+                                } else {
+                                    heart.classList.remove('heart-filled');
+                                }
+                            });
+                        </script>
                     </div>
                 </div>
                 <button class="hover:bg-gray-400 bg-gray-300 rounded-md text-center h-5 pl-3 pr-2 relative tel:bottom-16 tel:left-2 lg:bottom-14 lg:left-12 float-left">
@@ -42,7 +56,7 @@
                 </button>
             </div>
         </div>
-        <h4 class="text-3xl font-sans font-bold text-black pt-3 ml-2 relative tel:text-lg tel:ml-2 telL:left-3 float-left">Quel Cagnotte souhaitez vous lier</h4>
+        <h4 class="text-3xl font-sans font-bold text-black pt-3 ml-2 relative tel:text-lg tel:ml-2 telL:left-3 float-left">Quelle Cagnotte souhaitez vous lier</h4>
         <div class="grid grid-cols-1 tel:grid-cols-2 tel:grid-rows-1 tel:gap-3 telL:grid-cols-2 telL:grid-rows-1 telL:gap-5 md:grid-cols-4 md:grid-rows-1 md:gap-28 md:ml-5 lg:grid-cols-4 grid-rows-1 telL:ml-10 telL:right-5 tel:ml-5 float-left">
             <div class="bg-gray-100 rounded-md tel:w-32 sm:w-40 sm:h-24 md:w-40 lg:w-40 md:h-28 relative sm:left-2 top-9 flex flex-col items-center justify-center">
                 <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative ">Nom Cagnotte</p>

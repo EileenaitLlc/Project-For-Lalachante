@@ -1129,16 +1129,16 @@ body {
     left: 0.5rem;
   }
 
+  .telL\:left-3 {
+    left: 0.75rem;
+  }
+
   .telL\:right-48 {
     right: 12rem;
   }
 
   .telL\:right-5 {
     right: 1.25rem;
-  }
-
-  .telL\:left-3 {
-    left: 0.75rem;
   }
 
   .telL\:ml-10 {
@@ -1190,10 +1190,6 @@ body {
 @media (min-width: 500px) {
   .sm\:-left-36 {
     left: -9rem;
-  }
-
-  .sm\:-right-24 {
-    right: -6rem;
   }
 
   .sm\:-top-10 {
