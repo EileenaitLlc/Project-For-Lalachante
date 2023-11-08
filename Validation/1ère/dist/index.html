@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+    <div class="bg-gray-300 w-full h-16">
+    </div>
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-full md:w-3/5 lg:w-3/6 xl:w-2/6 2xl:w-2/6 4k:w-2/5">
+        <button class="pt-6 pr-5 bg-transparent float-right">
+            <img class="w-8" src="../menu.png" alt="">
+        </button>
+        <button class="pt-5 pl-7 bg-transparent inline-flex items-end">
+            <img class="w-6" src="../arrow.png" alt="">
+        </button>
+        <div class="grid grid-cols-1 grid-rows-2 gap-0.5 pl-5 relative tel:left-9 tel:bottom-10">
+            <h1 class="text-6xl font-sans font-bold text-slate-800 tel:text-2xl">VALIDATION</h1>
+            <h2 class="text-6xl font-sans font-bold text-slate-800 tel:text-2xl">SOUTENIR</h2>
+        </div>        
+        <p class="text-xl font-sans text-black text-center relative tel:text-base">Lier une Cagnotte Expérience</p>
+        <h3 class="text-4xl font-sans font-bold text-slate-800 tel:pt-3 tel:pb-5">Cause</h3>
+        <div class="tel:ml-5">
+            <div class="bg-gray-100 xl:w-96 xl:h-36 tel:w-72 tel:h-32 text-center rounded-md border border-gray-200">
+                <div class="flex">
+                    <div class="bg-gray-300 w-28 h-20 tel:w-20 tel:h-16 relative mt-3 ml-2"></div>
+                    <div class="tel:mt-3 relative tel:left-5 xl:left-10">
+                        <div class="grid grid-cols-1 grid-rows-3 gap-1">
+                            <p class="text-base font-sans font-bold text-black text-left tel:pb-2 xl:pb-3">Ela</p>
+                            <p class="text-sm font-sans text-slate-800 text-left">Date: 21/02/2023</p>
+                            <p class="text-sm font-sans text-slate-800 text-left relative bottom-5">Type: Cause</p>
+                        </div>
+                        <button id="heartButton" class="relative focus:outline-none tel:bottom-11 tel:left-8 lg:bottom-10 lg:left-16 float-right">
+                            <span class="heart text-3xl text-gray-400 transition duration-300 transform hover:scale-110 active:text-red-500 active:scale-100">&hearts;</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="hover:bg-gray-400 bg-gray-300 rounded-md text-center h-5 pl-3 pr-2 relative tel:bottom-16 tel:left-2 lg:bottom-14 lg:left-12 float-left">
+                    <p class="text-xs font-sans text-black tel:text-xs lg:text-xs xl:text-sm 2xl:text-sm">Voir la page</p>
+                </button>
+            </div>
+        </div>
+        <h4 class="text-3xl font-sans font-bold text-black pt-10 relative tel:text-xl tel:ml-5 tel:text-center xl:ml-16 text-left">Quel Cagnotte souhaitez vous lier</h4>
+        <div class="grid grid-cols-1 tel:grid-cols-2 tel:grid-rows-2 tel:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-1 gap-10 ml-3">
+            <div class="bg-gray-100 rounded-md tel:w-32 sm:w-40 sm:h-24 md:w-40 lg:w-40 md:h-28 relative sm:left-2 top-9 flex flex-col items-center justify-center">
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative ">Nom Cagnotte</p>
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative bottom-1">101€</p>
+                <p class="text-xs italic font-sans text-slate-800 text-center relative bottom-1">35 contributeurs</p>
+                <img class="w-3 mx-auto relative float-right md:left-1 sm:top-7 md:top-7" src="../+.png" alt="">
+                <p class="text-xs font-sans text-slate-800 text-center relative top-3 right-8">12/12/23</p>
+                <p class="text-xs font-sans text-slate-800 text-center relative bottom-1 left-8">Choisir</p>
+            </div>
+            <div class="bg-gray-100 rounded-md tel:w-32 sm:w-40 sm:h-24 md:w-40 lg:w-40 md:h-28 relative sm:left-2 top-9 flex flex-col items-center justify-center">
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative ">Nom Cagnotte</p>
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative bottom-1">101€</p>
+                <p class="text-xs italic font-sans text-slate-800 text-center relative bottom-1">35 contributeurs</p>
+                <img class="w-3 mx-auto relative float-right md:left-1 sm:top-7 md:top-7" src="../+.png" alt="">
+                <p class="text-xs font-sans text-slate-800 text-center relative top-3 right-8">12/12/23</p>
+                <p class="text-xs font-sans text-slate-800 text-center relative bottom-1 left-8">Choisir</p>
+            </div>
+            <div class="bg-gray-100 rounded-md tel:w-32 sm:w-40 sm:h-24 md:w-40 lg:w-40 md:h-28 relative sm:left-2 top-9 flex flex-col items-center justify-center">
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative ">Nom Cagnotte</p>
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative bottom-1">101€</p>
+                <p class="text-xs italic font-sans text-slate-800 text-center relative bottom-1">35 contributeurs</p>
+                <img class="w-3 mx-auto relative float-right md:left-1 sm:top-7 md:top-7" src="../+.png" alt="">
+                <p class="text-xs font-sans text-slate-800 text-center relative top-3 right-8">12/12/23</p>
+                <p class="text-xs font-sans text-slate-800 text-center relative bottom-1 left-8">Choisir</p>
+            </div>
+            <div class="bg-gray-100 rounded-md tel:w-32 sm:w-40 sm:h-24 md:w-40 lg:w-40 md:h-28 relative sm:left-2 top-9 flex flex-col items-center justify-center">
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative ">Nom Cagnotte</p>
+                <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative bottom-1">101€</p>
+                <p class="text-xs italic font-sans text-slate-800 text-center relative bottom-1">35 contributeurs</p>
+                <img class="w-3 mx-auto relative float-right md:left-1 sm:top-7 md:top-7" src="../+.png" alt="">
+                <p class="text-xs font-sans text-slate-800 text-center relative top-3 right-8">12/12/23</p>
+                <p class="text-xs font-sans text-slate-800 text-center relative bottom-1 left-8">Choisir</p>
+            </div>
+            <!-- Fin de répétition -->
+        </div>
+        <h5 class="text-3xl font-sans font-bold text-black pt-14 tel:text-xl text-center">Choisir la durée</h5>
+        <div class="grid grid-cols-1 tel:grid-cols-1 tel:grid-rows-2 tel:gap-1 sm:grid-cols-2 grid-rows-1 gap-1 ml-8">
+            <div class="mb-4 flex-1 md:flex-col justify-center items-center text-center tel:pt-5 xl:pt-5">
+                <label for="start_date" class="block text-gray-600 mb-2"></label>
+                <input type="text" id="start_date" name="start_date" placeholder="Date de début" class="border rounded shadow-inner py-2 px-12 text-gray-700 w-52 focus:shadow-outline">
+                <p class="text-xs font-sans text-slate-800 text-center">Entrez une date de début</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 text-gray-600 relative tel:bottom-12 tel:left-12 xl:bottom-12 xl:left-14" viewBox="0 0 24 24">
+                    <rect width="18" height="18" x="3" y="2" rx="2" ry="2"></rect>
+                    <path d="M16 2v4M8 2v4M3 10h18"></path>
+                </svg>
+            </div>
+            <div class="mb-4 flex-1 md:flex-col justify-end items-center text-center relative tel:bottom-5 xl:pt-5">
+                <label class="block text-gray-600 mb-2"></label>
+                <input type="text" id="end_date" name="end_date" placeholder="Date de fin" class="border rounded shadow-inner py-2 px-14 text-gray-700 w-56 focus:shadow-outline">
+                <p class="text-xs font-sans text-slate-800 text-center">Vous pouvez laisser vide</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 text-gray-600 relative tel:bottom-12 tel:left-12 xl:bottom-12 xl:left-14" viewBox="0 0 24 24">
+                    <rect width="18" height="18" x="3" y="2" rx="2" ry="2"></rect>
+                    <path d="M16 2v4M8 2v4M3 10h18"></path>
+                </svg>
+            </div>
+        </div>
+        <h5 class="text-3xl font-sans font-bold text-black text-center tel:text-xl relative tel:bottom-7 bottom-5">Valider votre lien</h5>
+        <div class="text-center pt-2 relative bottom-3">
+            <button type="submit" class="bg-gray-300 text-black px-10 py-2 rounded hover:bg-gray-600">Lier</button>
+        </div>
+    </div>
+</body>
+</html>
+
