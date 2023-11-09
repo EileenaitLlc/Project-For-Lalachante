@@ -9,7 +9,7 @@
 <body class="bg-gray-100 flex flex-col justify-center h-full items-center">
     <div class="bg-gray-300 w-full h-16">
     </div>
-    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-3/6 2xl:w-2/6 4k:w-2/5">
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-3/6 2xl:w-2/5 4k:w-2/5">
         <button class="pt-6 pr-5 bg-transparent float-right">
             <img class="w-8" src="../menu.png" alt="">
         </button>
@@ -56,7 +56,7 @@
                 </button>
             </div>
         </div>
-        <h4 class="text-3xl font-sans font-bold text-black pt-3 ml-2 relative tel:text-lg tel:ml-2 telL:left-3 float-left">Quelle Cagnotte souhaitez vous lier</h4>
+        <h4 class="text-3xl font-sans font-bold text-black pt-3 ml-2 relative tel:text-lg tel:ml-2 telL:left-0 telL:right-1 stel:left-2 sm:-left-3 lg:left-10 xl:text-2xl float-left">Quelle Cagnotte souhaitez vous lier</h4>
         <div class="grid grid-cols-1 tel:grid-cols-2 tel:grid-rows-1 tel:gap-3 telL:grid-cols-2 telL:grid-rows-1 telL:gap-5 md:grid-cols-4 md:grid-rows-1 md:gap-28 md:ml-5 lg:grid-cols-4 grid-rows-1 telL:ml-10 telL:right-5 tel:ml-5 float-left">
             <div class="bg-gray-100 rounded-md tel:w-32 sm:w-40 sm:h-24 md:w-40 lg:w-40 md:h-28 relative sm:left-2 top-9 flex flex-col items-center justify-center">
                 <p class="text-base font-sans text-slate-800 text-center tel:text-sm relative ">Nom Cagnotte</p>
@@ -84,9 +84,9 @@
             </div>
         </div>
         <!-- Fin de répétition -->
-        <h5 class="text-3xl font-sans font-bold text-black pt-28 tel:text-xl text-center float-left tel:ml-24 telL:ml-32 md:-mt-10 relative sm:-top-10 telL:mr-10 telL:-top-2 md:left-24 md:pt-40 lg:right-28">Choisir la durée</h5>
+        <h5 class="text-3xl font-sans font-bold text-black pt-28 tel:text-xl text-center float-left tel:ml-24 telL:ml-32 md:-mt-10 relative sm:-top-10 telL:mr-10 telL:-top-2 xl:text-2xl md:left-24 md:pt-40 lg:right-20">Choisir la durée</h5>
         <div class="grid tel:grid-cols-1 tel:grid-rows-2 tel:gap-1 sm:grid-cols-2 sm:grid-rows-1 grid-cols-2 grid-rows-1 gap-0 md:ml-40 ml-8 float-left telL:pt-10">
-            <div class="flex md:flex-col justify-center items-center text-center tel:ml-2 telL:ml-16 tel:pt-5 sm:-top-24 sm:left-10 md:pb-5 relative lg:right-28 lg:-top-16 lg:-left-32">
+            <div class="flex md:flex-col justify-center items-center text-center tel:ml-2 telL:ml-16 tel:pt-5 sm:-top-24 sm:left-10 md:pb-5 md:-left-2 relative lg:right-28 lg:-top-16 lg:-left-32 xl:bottom-20">
                 <label for="start_date" class="block text-gray-600 mb-2"></label>
                 <input type="text" id="start_date" name="start_date" placeholder="Date de début" class="border rounded shadow-inner py-2 px-12 text-gray-700 w-52 focus:shadow-outline">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 text-gray-600 relative tel:right-48 telL:right-48 md:right-20 md:bottom-8 " viewBox="0 0 24 24">
@@ -94,8 +94,8 @@
                     <path d="M16 2v4M8 2v4M3 10h18"></path>
                 </svg>
             </div>
-            <p class="text-xs font-sans text-slate-800 text-center relative sm:bottom-8 sm:right-40 md:right-52 md:-top-5 lg:right-96 lg:top-2">Entrez une date de début</p>
-            <div class="flex md:flex-col justify-end items-center text-center tel:ml-2 sm:bottom-14 sm:left-16 telL:ml-16 md:left-0 md:bottom-24 relative lg:left-40 lg:-top-44">
+            <p class="text-xs font-sans text-slate-800 text-center relative sm:bottom-8 sm:right-48 md:right-52 md:-top-5 lg:right-96 lg:top-2 xl:bottom-1 xl:-left-80">Entrez une date de début</p>
+            <div class="flex md:flex-col justify-end items-center text-center tel:ml-2 sm:bottom-14 sm:-right-14 telL:ml-16 md:left-0 md:bottom-24 relative lg:left-40 lg:-top-44 lg:pt-1 xl:-top-44 xl:pt-2">
                 <label class="block text-gray-600 mb-2"></label>
                 <input type="text" id="end_date" name="end_date" placeholder="Date de fin" class="border rounded shadow-inner py-2 px-12 text-gray-700 w-52 focus:shadow-outline">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8 text-gray-600 relative tel:right-48 telL:right-48 md:right-20 md:bottom-10 lg:bottom-9" viewBox="0 0 24 24">
@@ -103,8 +103,8 @@
                     <path d="M16 2v4M8 2v4M3 10h18"></path>
                 </svg>
             </div>
-            <p class="text-xs font-sans text-slate-800 text-center relative sm:right-44 sm:bottom-1 md:right-52 md:-top-10 lg:-top-32 lg:right-24">Vous pouvez laisser vide</p>
-            <h5 class="text-3xl font-sans font-bold text-black text-center tel:text-xl relative tel:bottom-7 bottom-5 float-left tel:pt-16 telL:pt-20 telL:left-2 sm:left-14 sm:bottom-20 md:pt-5 md:left-10 lg:-top-36">Valider votre lien</h5>
+            <p class="text-xs font-sans text-slate-800 text-center relative sm:right-44 sm:bottom-1 md:right-52 md:-top-10 lg:-top-32 lg:right-24 lg:pt-1 xl:-top-28 xl:-left-16">Vous pouvez laisser vide</p>
+            <h5 class="text-3xl font-sans font-bold text-black text-center tel:text-xl relative tel:bottom-7 bottom-5 float-left tel:pt-16 telL:pt-20 telL:left-2 sm:left-14 sm:bottom-20 md:pt-5 md:left-10 lg:-top-36 xl:text-2xl">Valider votre lien</h5>
             <div class="text-center relative float-left pt-20 tel:bottom-16 telL:bottom-16 telL:left-2 sm:-top-6 sm:-left-36 md:-top-24 md:-left-44 lg:-left-60 lg:-top-32">
                 <button type="submit" class="bg-gray-300 text-black px-10 py-2 rounded hover:bg-gray-600">Lier</button>
             </div>
@@ -112,4 +112,3 @@
     </div>
 </body>
 </html>
-
