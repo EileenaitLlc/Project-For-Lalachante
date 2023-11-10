@@ -5,3 +5,7 @@
 .heart-filled {
     color: red;
 }
+
+.bg-white {
+    flex-grow: 1;
+}

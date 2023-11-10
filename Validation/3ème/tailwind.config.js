@@ -6,6 +6,7 @@ module.exports = {
       'tel': '320px',
       'telL': '375px',
       'sm': '500px',
+      'smd': '700px',
       'md': '768px',
       'lg': '1020px',
       'xl': '1280px',
