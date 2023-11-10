@@ -1251,6 +1251,10 @@ video {
     left: 0.25rem;
   }
 
+  .md\:left-36 {
+    left: 9rem;
+  }
+
   .md\:left-40 {
     left: 10rem;
   }
@@ -1261,6 +1265,14 @@ video {
 
   .md\:top-7 {
     top: 1.75rem;
+  }
+
+  .md\:left-32 {
+    left: 8rem;
+  }
+
+  .md\:left-28 {
+    left: 7rem;
   }
 
   .md\:ml-16 {
@@ -1339,52 +1351,12 @@ video {
     left: 4rem;
   }
 
-  .lg\:left-10 {
-    left: 2.5rem;
-  }
-
-  .lg\:left-40 {
-    left: 10rem;
-  }
-
-  .lg\:left-32 {
-    left: 8rem;
-  }
-
-  .lg\:left-44 {
-    left: 11rem;
-  }
-
-  .lg\:left-48 {
-    left: 12rem;
-  }
-
-  .lg\:left-52 {
-    left: 13rem;
-  }
-
   .lg\:left-56 {
     left: 14rem;
   }
 
   .lg\:top-56 {
     top: 14rem;
-  }
-
-  .lg\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
-  .lg\:ml-12 {
-    margin-left: 3rem;
-  }
-
-  .lg\:ml-14 {
-    margin-left: 3.5rem;
-  }
-
-  .lg\:ml-20 {
-    margin-left: 5rem;
   }
 
   .lg\:ml-24 {
@@ -1403,18 +1375,6 @@ video {
     width: 10rem;
   }
 
-  .lg\:pt-3 {
-    padding-top: 0.75rem;
-  }
-
-  .lg\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1427,16 +1387,16 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:bottom-32 {
+    bottom: 8rem;
+  }
+
   .xl\:bottom-36 {
     bottom: 9rem;
   }
 
   .xl\:bottom-40 {
     bottom: 10rem;
-  }
-
-  .xl\:bottom-44 {
-    bottom: 11rem;
   }
 
   .xl\:left-10 {
@@ -1455,16 +1415,16 @@ video {
     left: 2rem;
   }
 
+  .xl\:left-9 {
+    left: 2.25rem;
+  }
+
   .xl\:top-60 {
     top: 15rem;
   }
 
-  .xl\:bottom-32 {
-    bottom: 8rem;
-  }
-
-  .xl\:left-9 {
-    left: 2.25rem;
+  .xl\:left-5 {
+    left: 1.25rem;
   }
 
   .xl\:h-36 {
@@ -1496,6 +1456,11 @@ video {
     line-height: 2rem;
   }
 
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1514,11 +1479,6 @@ video {
   .xl\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .xl\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
