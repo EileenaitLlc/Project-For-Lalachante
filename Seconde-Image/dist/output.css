@@ -1015,34 +1015,18 @@ video {
     height: 100%;
   }
 
-  .\32xl\:w-3\/5 {
-    width: 60%;
-  }
-
-  .\32xl\:w-3\/6 {
-    width: 50%;
-  }
-
   .\32xl\:w-2\/6 {
     width: 33.333333%;
   }
 }
 
 @media (min-width: 2560px) {
-  .\34k\:top-20 {
-    top: 5rem;
-  }
-
   .\34k\:top-14 {
     top: 3.5rem;
   }
 
   .\34k\:h-full {
     height: 100%;
-  }
-
-  .\34k\:w-3\/6 {
-    width: 50%;
   }
 
   .\34k\:w-2\/5 {
