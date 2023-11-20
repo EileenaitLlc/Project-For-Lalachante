@@ -1022,6 +1022,10 @@ video {
     right: 2rem;
   }
 
+  .lg\:bottom-3 {
+    bottom: 0.75rem;
+  }
+
   .lg\:mr-10 {
     margin-right: 2.5rem;
   }
@@ -1040,6 +1044,14 @@ video {
 
   .lg\:w-24 {
     width: 6rem;
+  }
+
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:pl-5 {
+    padding-left: 1.25rem;
   }
 }
 
@@ -1128,6 +1140,18 @@ video {
     left: 2.5rem;
   }
 
+  .xl\:left-16 {
+    left: 4rem;
+  }
+
+  .xl\:left-20 {
+    left: 5rem;
+  }
+
+  .xl\:left-2 {
+    left: 0.5rem;
+  }
+
   .xl\:mr-12 {
     margin-right: 3rem;
   }
@@ -1174,6 +1198,10 @@ video {
 
   .xl\:w-28 {
     width: 7rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
   }
 }
 
