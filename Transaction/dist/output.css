@@ -1315,6 +1315,34 @@ video {
     right: 8rem;
   }
 
+  .\32xl\:top-2 {
+    top: 0.5rem;
+  }
+
+  .\32xl\:top-1 {
+    top: 0.25rem;
+  }
+
+  .\32xl\:top-3 {
+    top: 0.75rem;
+  }
+
+  .\32xl\:top-9 {
+    top: 2.25rem;
+  }
+
+  .\32xl\:top-12 {
+    top: 3rem;
+  }
+
+  .\32xl\:top-14 {
+    top: 3.5rem;
+  }
+
+  .\32xl\:top-10 {
+    top: 2.5rem;
+  }
+
   .\32xl\:mr-20 {
     margin-right: 5rem;
   }
