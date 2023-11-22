@@ -35,20 +35,20 @@
                         <button id="heartButton" class="relative focus:outline-none tel:bottom-11 tel:left-8 lg:bottom-10 lg:left-16 float-right">
                             <span class="heart text-3xl text-gray-400 transition duration-300 transform hover:scale-110 active:text-red-500 active:scale-100">&hearts;</span>
                         </button>
-                        <script>
-                            const heartButton = document.getElementById('heartButton');
-                            const heart = heartButton.querySelector('.heart');
-                            let isFilled = false;
-    
-                            heartButton.addEventListener('click', () => {
-                                isFilled = !isFilled;
-                                if (isFilled) {
-                                    heart.classList.add('heart-filled');
-                                } else {
-                                    heart.classList.remove('heart-filled');
-                                }
-                            });
-                        </script>
+                            <script>
+                                const heartButton = document.getElementById('heartButton');
+                                const heart = heartButton.querySelector('.heart');
+                                let isFilled = false;
+        
+                                heartButton.addEventListener('click', () => {
+                                    isFilled = !isFilled;
+                                    if (isFilled) {
+                                        heart.classList.add('heart-filled');
+                                    } else {
+                                        heart.classList.remove('heart-filled');
+                                    }
+                                });
+                            </script>
                     </div>
                 </div>
                 <button class="hover:bg-gray-400 bg-gray-300 rounded-md text-center h-5 pl-3 pr-2 relative tel:bottom-16 tel:left-2 lg:bottom-14 lg:left-12 float-left">
