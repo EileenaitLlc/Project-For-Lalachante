@@ -575,12 +575,12 @@ video {
   right: 1.25rem;
 }
 
-.top-3 {
-  top: 0.75rem;
-}
-
 .top-5 {
   top: 1.25rem;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .top-7 {
@@ -645,10 +645,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-16 {
@@ -751,8 +747,20 @@ video {
   gap: 1rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-md {
@@ -971,16 +979,12 @@ video {
 }
 
 @media (min-width: 320px) {
-  .tel\:bottom-6 {
-    bottom: 1.5rem;
+  .tel\:bottom-2 {
+    bottom: 0.5rem;
   }
 
   .tel\:bottom-7 {
     bottom: 1.75rem;
-  }
-
-  .tel\:left-12 {
-    left: 3rem;
   }
 
   .tel\:left-20 {
@@ -989,6 +993,10 @@ video {
 
   .tel\:left-5 {
     left: 1.25rem;
+  }
+
+  .tel\:left-8 {
+    left: 2rem;
   }
 
   .tel\:right-16 {
@@ -1327,6 +1335,10 @@ video {
 
   .\32xl\:w-3\/4 {
     width: 75%;
+  }
+
+  .\32xl\:w-60 {
+    width: 15rem;
   }
 
   .\32xl\:pl-28 {
