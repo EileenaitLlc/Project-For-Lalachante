@@ -1021,93 +1021,93 @@ video {
 }
 
 @media (min-width: 500px) {
-  .telM\:bottom-0 {
+  .telxl\:bottom-0 {
     bottom: 0px;
   }
 
-  .telM\:bottom-10 {
+  .telxl\:bottom-10 {
     bottom: 2.5rem;
   }
 
-  .telM\:bottom-16 {
+  .telxl\:bottom-16 {
     bottom: 4rem;
   }
 
-  .telM\:bottom-6 {
+  .telxl\:bottom-6 {
     bottom: 1.5rem;
   }
 
-  .telM\:left-16 {
+  .telxl\:left-16 {
     left: 4rem;
   }
 
-  .telM\:left-3 {
+  .telxl\:left-3 {
     left: 0.75rem;
   }
 
-  .telM\:left-48 {
+  .telxl\:left-48 {
     left: 12rem;
   }
 
-  .telM\:left-8 {
+  .telxl\:left-8 {
     left: 2rem;
   }
 
-  .telM\:right-16 {
+  .telxl\:right-16 {
     right: 4rem;
   }
 
-  .telM\:right-5 {
+  .telxl\:right-5 {
     right: 1.25rem;
   }
 
-  .telM\:top-6 {
+  .telxl\:top-6 {
     top: 1.5rem;
   }
 
-  .telM\:grid {
+  .telxl\:grid {
     display: grid;
   }
 
-  .telM\:h-24 {
+  .telxl\:h-24 {
     height: 6rem;
   }
 
-  .telM\:h-28 {
+  .telxl\:h-28 {
     height: 7rem;
   }
 
-  .telM\:w-40 {
+  .telxl\:w-40 {
     width: 10rem;
   }
 
-  .telM\:w-full {
+  .telxl\:w-full {
     width: 100%;
   }
 
-  .telM\:grid-cols-2 {
+  .telxl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .telM\:grid-rows-2 {
+  .telxl\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
-  .telM\:gap-0 {
+  .telxl\:gap-0 {
     gap: 0px;
   }
 
-  .telM\:text-2xl {
+  .telxl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .telM\:text-4xl {
+  .telxl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .telM\:text-xl {
+  .telxl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
