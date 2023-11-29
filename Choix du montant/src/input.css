@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .btn {
-    @apply rounded-xl px-2 py-2 tel:px-5 tel:py-5 telL:py-6 telL:px-6 xl:px-8 xl:py-8 md:px-5 md:py-5 hover:shadow-md;
+    @apply rounded-xl px-1 py-2 hover:shadow-md w-28 h-20;
 }
