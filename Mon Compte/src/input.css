@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-left: 10px; /* Ajustez si nécessaire */
+}
+
+.column {
+    text-align: center;
+    font-size: 1xl;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
