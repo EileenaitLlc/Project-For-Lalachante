@@ -3,9 +3,25 @@
 @tailwind utilities;
 
 .montant {
-    @apply bg-gray-300 rounded-md w-44 h-20 tel:w-64 tel:h-12 telL:w-80 telL:h-10 sm:w-96 sm:h-10 lg:w-80 lg:h-10 xl:w-96 xl:h-10 md:w-72 md:h-10 ml-10 mt-4;
+    @apply bg-gray-300 rounded-md w-44 h-20 telL:w-56 telL:h-10 telxl:w-80 telxl:h-10 sm:w-96 sm:h-10 lg:w-80 lg:h-10 xl:w-64 xl:h-10 1xl:w-72 1xl:h-10 2xl:w-96 2xl:h-10 md:w-72 md:h-10 ml-10 mt-4;
 }
 
 .btn {
-    @apply rounded-xl px-2 py-2 tel:px-3 tel:py-3 telL:py-3 telL:px-3 md:px-3 md:py-3 hover:shadow-md;
+    @apply rounded-xl px-2 py-2 md:px-3 md:py-3 hover:shadow-md;
+}
+
+.header-min {
+    @apply pt-10 pl-10 text-left
+}
+
+.h1-min {
+   @apply text-5xl font-sans font-bold text-slate-800 tel:text-4xl
+}
+
+.header-maj {
+    @apply uppercase ml-10
+}
+
+.h1-maj {
+    @apply text-3xl  font-bold
 }
