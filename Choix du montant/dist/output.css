@@ -761,9 +761,9 @@ video {
     line-height: 2rem;
   }
 
-  .tel\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .tel\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .tel\:text-lg {
