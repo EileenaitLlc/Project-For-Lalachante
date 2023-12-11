@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col justify-center min-h-screen items-center">
+    <div class="bg-gray-300 w-full h-16"></div>
+    <div class="bg-white shadow-lg flex-grow w-full sm:w-full md:w-3/5 lg:w-3/6 xl:w-3/6 2xl:w-2/6 4k:w-2/5">
+        <button class="pt-3 pl-3 bg-transparent inline-flex items-end">
+            <img class="w-5" src="../arrow.png" alt="">
+        </button>
+        <div>
+            <div>
+                <main>
+                    <header>
+                        <h1 class="text-3xl ml-3 telL:ml-10 header-maj md:text-5xl text-black font-bold">
+                            Cagnottes
+                        </h1>
+                        <div class="flex justify-center">
+                            <p class="text-2xl font-bold text-black">
+                                expérience
+                            </p>
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <p class="text-xl text-black">
+                                Jasmine Love
+                            </p>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-extrabold text-xl tel:text-4xl mr-6">
+                                8€
+                            </span>
+                            <span class="block text-base tel:text-lg mr-4">
+                                Montant disponible
+                            </span>
+                            <span class="block text-sm md:text-base mr-14">
+                                Utiliser
+                            </span>
+                        </div>
+                    </header>
+                    <div class="pt-5 pl-3 telL:pl-10 telxl:pl-10">
+                        <a href="{{ route('utilisateur.detailexperience', ['id_experience' => $experience->id_experience]) }}">
+                            <div class="bg-gray-200 w-72 h-60 md:w-96 lg:w-3/4 telxl:w-96 telL:h-48">
+                                <div class="space-x-5 ml-3 mt-3">
+                                    <div class="rounded-lg flex">
+                                        <div class="relative">
+                                            <span class="text-xs text-black absolute top-1 left-5 md:top-1 md:left-20">
+                                                21/02/2023
+                                            </span>
+                                        </div>
+                                        <div class="bg-gray-50 w-48 h-32 mt-6 ml-4">
+                                            <div class="relative">
+                                                <span class="text-sm absolute top-20 left-12 telxl:top-20 mt-2 telxl:left-20">
+                                                    <svg class="w-5 h-5 ml-3" width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <rect width="37" height="37" fill="url(#pattern0)"/>
+                                                        <defs>
+                                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                        <use xlink:href="#image0_3024_20284" transform="scale(0.02)"/>
+                                                        </pattern>
+                                                        <image id="image0_3024_20284" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWklEQVR4nO2Zz27TQBDGV/zpgWOBE0VqeQcQfZAKRC95i6Jecmu5lypBvIFRQXLi79soh7xASAWiD1DoqW16brgEjbQSIZTKmx3bS+VPGmkl2zv+edc7s7PG1KpVq5aPkiS5TXKd5DaAA5JHJC8A/BRz7W/umtzzvNls3jKxyFr7mOQbkickp572g+QugJXKAAA8JPmO5GQBgHmbAGilafqgVAhr7SsAYwWAPwzAOYCXhQMMh8O7AN5rA1wB1BZfhUCkaXqPJIqG4G/LxKcqhHydkiGmbmT6SZIsqYGUMZ2ugWlpQWxWBUFnWZa9CILo9/v3SZ5VDQJgHLQ0uzgR8gKfSa46GwUC7YdE7NBg15j5KI3Avi4XygBc2hE6LTZm+ttQ6G/XC0KSOZcHxQZyIsmpz2isKzgtAmRqrX3mA7IdKwiA1z4gH2MFIfkhN4hsgCIG+eoDMvaIEw33kn/Z7HIp7X/d5/rIG2fOcoN4xI9Vo6Rer7eW0+elOog41wLpdrtP1EE8dn8jxal1qD61bszPzpuy/DLugLiVG0SKZxGDPPVKGgF8jw0EwLF3dVJS5ghBdoyv3HIZ1caq0+k88gZxMK1A5yMJmi7YHQaOxp5ZVNba5UiKD+fBdWGpxVYNwpl/LRSmXeFovDXKhzifKoDoDgaDO6aAInZWIkRHvYg9d6zQKmM6DbRH4ipJLbag1exU7cf2rAvvS6BSAJAq4p4s96YqSbR1B5reuZk8I2nHwhG7CEkyJ8UzqTvJnkE2QG6nOXGHndL+ItckFZcsNqrj6Vq1apn/Qr8Ap1/vcAcP2GIAAAAASUVORK5CYII="/>
+                                                        </defs>
+                                                    </svg>                                                        
+                                                    Utiliser
+                                                </span>
+                                            </div>
+                                            <p class="flex justify-center text-sm mt-2">
+                                                Jasmine Love
+                                            </p>
+                                        </div>
+                                        <div class="ml-4">
+                                            <span class="text-base lg:text-xl font-sans font-extrabold text-slate-800 text-left">Jasmine</span>
+                                            <span class="text-xs font-sans text-slate-800 text-left block">Projet : Jasmine Love</span>
+                                            <span class="text-xs font-sans text-slate-800 text-left block">Expérience : Jasmine Love</span>
+                                            <span class="text-xs telxl::text-sm lg:text-base font-sans text-slate-800 text-left block mt-2">35 Contributeurs</span>
+                                            <span class="text-xs telxl:text-sm lg:text-base font-sans text-slate-800 text-left block">10 Contributions</span>
+                                            <span class="text-xs telxl:text-sm lg:text-base font-sans text-slate-800 text-left block">Participant Experience 1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="space-x-11 telL:space-x-1 ml-3 mt-2">
+                                    <span class="text-xs telxl:text-sm xl:text-base text-black">
+                                        Type:Expérience
+                                    </span>
+                                    <span class="text-xs telxl:text-sm xl:text-base text-black">
+                                        Ayant droit: 1
+                                    </span>
+                                    <span class="text-xs telxl:text-sm xl:text-base text-black">
+                                        Droit Cagnotte: 100%
+                                    </span>
+                                </div>
+                            </div>
+                          </a>
+                    </div>
+                    <div class="flex justify-center mt-16">
+                        <span class="text-xl font-sans text-slate-800 text-left block">
+                            Statistique de ma cagnottes
+                            <div class="flex justify-center">
+                                <p class="text-xl text-gray-900 md:text-xl dark:text-black mt-1">Metric<p class="text-2xl text-black font-bold ml-2">Cagnotte</p></p>
+                            </div>
+                        </span>
+                    </div>
+                    <section class="text-gray-600 body-font">
+                        <div class="container px-5 py-10 mx-auto">
+                            <div class="flex flex-wrap -m-4 justify-center">
+                                <div class="lg:w-56 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-10 py-5 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">240</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 mb-3 flex justify-center">Total Cagnotte</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-36 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-4 py-5 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-start">125</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 mb-3 flex justify-start">réel Cagnotte</span>
+                                            <div class="flex flex-col items-end absolute right-5 top-5">
+                                                <span class="text-sm font-bold text-black">100%</span>
+                                                <span class="text-xs text-neutral-400">Droit</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-56 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-10 py-5 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">125</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 mb-3 flex justify-center">Total droit: 100%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-28 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-1 py-3 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">35</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 flex justify-center">Total Dépenses</span>
+                                            <a href="" class="text-xs text-neutral-400 mb-3 flex justify-center italic">Voir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-28 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-1 py-3 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">10</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 flex justify-center">Total Retrait</span>
+                                            <a href="" class="text-xs text-neutral-400 mb-3 flex justify-center italic">Voir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-36 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="py-5 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">3,5€</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 mb-3 flex justify-center">Moyen Contribution</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-28 sm:w-1/2 p-2 ml-1">
+                                    <div class="flex relative">
+                                        <div class="py-5 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">10</span>
+                                            <span class="text-xs whitespace-nowrap text-neutral-400 mb-3 flex justify-center">Frais Cagnotte</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-28 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="py-5 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">2%</span>
+                                            <span class="text-xs whitespace-nowrap text-neutral-400 mb-3 flex justify-center">% Conversion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-28 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-1 py-3 relative z-10 w-full border rounded-xl border-gray-200 bg-white">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">10</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 flex justify-center">Total Retrait</span>
+                                            <a href="" class="text-xs text-neutral-400 mb-3 italic flex justify-center">Voir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:w-28 sm:w-1/2 p-2">
+                                    <div class="flex relative">
+                                        <div class="px-1 py-3 relative z-10 w-full border rounded-xl border-gray-200 bg-white text-center">
+                                            <span class="text-3xl font-semibold text-black mb-1 flex justify-center">10</span>
+                                            <span class="text-sm whitespace-nowrap text-neutral-400 flex justify-center">Total Retrait</span>
+                                            <a href="" class="text-xs text-neutral-400 mb-3 italic flex justify-center">Voir</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div>
+                        <div class="flex justify-center mt-5">
+                            <p class="text-xl text-gray-900 md:text-xl dark:text-black mt-1">Opérations<p class="text-2xl text-black font-bold ml-2">Cagnottes</p></p>
+                        </div>
+                        <div class="grid grid-cols-3 grid-rows-8 gap-2 ml-14 mt-7 ">
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">Date</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">Opération</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">Montant</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Contributions</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">5€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Achat produit</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">2€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Achat expérience</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8 ">1€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Remboursement</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">1€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Liaison Cause</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">1€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Dé liaison Cause</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">1€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Don Cause</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">1€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Transfère cagnotte</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">1€</p>
+                            <p class="text-base text-black text-left tel:text-sm md:text-base">09/08/23</p>
+                            <p class="text-base text-black text-left lg:whitespace-nowrap tel:text-sm md:text-base">Frais banquaire</p>
+                            <p class="text-base text-black text-right tel:text-sm md:text-base mr-8">1€</p>
+                        </div>
+                        <div class="flex justify-end mr-2 mb-5">
+                            <a href="" class="text-base text-black tel:text-sm md:text-base">Voir plus...</a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
