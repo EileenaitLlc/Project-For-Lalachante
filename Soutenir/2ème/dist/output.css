@@ -534,56 +534,44 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.relative {
-  position: relative;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
 .float-right {
   float: right;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
 
-.block {
-  display: block;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .inline {
@@ -598,16 +586,8 @@ video {
   display: inline-flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .h-16 {
   height: 4rem;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .h-28 {
@@ -618,8 +598,8 @@ video {
   height: 1.25rem;
 }
 
-.h-4 {
-  height: 1rem;
+.h-full {
+  height: 100%;
 }
 
 .w-5 {
@@ -630,28 +610,16 @@ video {
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-96 {
   width: 24rem;
 }
 
-.w-4 {
-  width: 1rem;
+.w-full {
+  width: 100%;
 }
 
 .flex-grow {
   flex-grow: 1;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -672,14 +640,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-0 {
-  gap: 0px;
-}
-
-.gap-0\.5 {
-  gap: 0.125rem;
 }
 
 .rounded-lg {
@@ -705,60 +665,20 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
 }
 
 .pr-5 {
   padding-right: 1.25rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .pt-3 {
   padding-top: 0.75rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-9 {
-  padding-top: 2.25rem;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -766,29 +686,14 @@ video {
   line-height: 2rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -802,11 +707,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-slate-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -849,20 +749,12 @@ video {
 }
 
 @media (min-width: 320px) {
-  .tel\:h-28 {
-    height: 7rem;
-  }
-
   .tel\:h-full {
     height: 100%;
   }
 
   .tel\:w-full {
     width: 100%;
-  }
-
-  .tel\:pt-14 {
-    padding-top: 3.5rem;
   }
 }
 
@@ -871,56 +763,20 @@ video {
     margin-left: 2.5rem;
   }
 
-  .telL\:h-28 {
-    height: 7rem;
-  }
-
   .telL\:w-full {
     width: 100%;
   }
 }
 
 @media (min-width: 640px) {
-  .sm\:relative {
-    position: relative;
-  }
-
-  .sm\:bottom-24 {
-    bottom: 6rem;
-  }
-
-  .sm\:left-16 {
-    left: 4rem;
-  }
-
-  .sm\:top-36 {
-    top: 9rem;
-  }
-
-  .sm\:h-28 {
-    height: 7rem;
-  }
-
-  .sm\:w-3\/4 {
-    width: 75%;
-  }
-
   .sm\:w-full {
     width: 100%;
   }
 }
 
 @media (min-width: 768px) {
-  .md\:bottom-40 {
-    bottom: 10rem;
-  }
-
   .md\:w-3\/5 {
     width: 60%;
-  }
-
-  .md\:pt-20 {
-    padding-top: 5rem;
   }
 
   .md\:text-5xl {
@@ -930,16 +786,8 @@ video {
 }
 
 @media (min-width: 1020px) {
-  .lg\:bottom-28 {
-    bottom: 7rem;
-  }
-
   .lg\:w-3\/6 {
     width: 50%;
-  }
-
-  .lg\:pt-10 {
-    padding-top: 2.5rem;
   }
 }
 
@@ -956,10 +804,6 @@ video {
 }
 
 @media (min-width: 2560px) {
-  .\34k\:top-14 {
-    top: 3.5rem;
-  }
-
   .\34k\:w-2\/5 {
     width: 40%;
   }
