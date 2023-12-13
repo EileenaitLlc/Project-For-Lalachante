@@ -540,6 +540,161 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
+.mx-40 {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .header-min {
   padding-top: 2.5rem;
   padding-left: 2.5rem;
@@ -571,4 +726,78 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+}
+
+.hover\:bg-zinc-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 320px) {
+  .tel\:left-5 {
+    left: 1.25rem;
+  }
+
+  .tel\:top-7 {
+    top: 1.75rem;
+  }
+
+  .tel\:h-full {
+    height: 100%;
+  }
+
+  .tel\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 375px) {
+  .telL\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .telL\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:w-5\/6 {
+    width: 83.333333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:w-3\/4 {
+    width: 75%;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1020px) {
+  .lg\:w-4\/6 {
+    width: 66.666667%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-2\/5 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-2\/5 {
+    width: 40%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .\34k\:w-2\/5 {
+    width: 40%;
+  }
 }

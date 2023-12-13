@@ -544,38 +544,24 @@ video {
   position: relative;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.bottom-5 {
+  bottom: 1.25rem;
 }
 
-.mx-10 {
+.ml-10 {
   margin-left: 2.5rem;
-  margin-right: 2.5rem;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.mx-44 {
-  margin-left: 11rem;
-  margin-right: 11rem;
-}
-
-.mx-36 {
-  margin-left: 9rem;
-  margin-right: 9rem;
-}
-
-.mx-48 {
-  margin-left: 12rem;
-  margin-right: 12rem;
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.mr-36 {
+  margin-right: 9rem;
 }
 
 .mt-10 {
@@ -586,8 +572,8 @@ video {
   margin-top: 4rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -606,52 +592,40 @@ video {
   height: 4rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-8 {
-  height: 2rem;
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-7 {
   height: 1.75rem;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
-.w-32 {
-  width: 8rem;
+.h-full {
+  height: 100%;
 }
 
 .w-4 {
   width: 1rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-full {
   width: 100%;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
 .flex-grow {
   flex-grow: 1;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col {
@@ -666,8 +640,20 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded {
@@ -702,20 +688,12 @@ video {
   padding-left: 0.25rem;
 }
 
+.pr-28 {
+  padding-right: 7rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.indent-4 {
-  text-indent: 1rem;
 }
 
 .text-3xl {
@@ -723,9 +701,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -781,9 +759,9 @@ video {
   font-weight: 700;
 }
 
-.hover\:bg-zinc-400:hover {
+.hover\:bg-zinc-500:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 320px) {
