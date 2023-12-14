@@ -576,18 +576,6 @@ video {
   margin-top: 16rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .inline {
   display: inline;
 }
@@ -600,8 +588,8 @@ video {
   display: inline-flex;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-16 {
@@ -624,16 +612,8 @@ video {
   height: 100%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.w-10 {
-  width: 2.5rem;
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-4 {
@@ -650,14 +630,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .flex-grow {
@@ -720,30 +692,6 @@ video {
   padding-top: 0.25rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.indent-1 {
-  text-indent: 0.25rem;
-}
-
-.indent-10 {
-  text-indent: 2.5rem;
-}
-
-.indent-7 {
-  text-indent: 1.75rem;
-}
-
-.indent-6 {
-  text-indent: 1.5rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -752,11 +700,6 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-lg {
@@ -826,58 +769,22 @@ video {
     top: 1.75rem;
   }
 
-  .tel\:mr-10 {
-    margin-right: 2.5rem;
-  }
-
   .tel\:mr-5 {
     margin-right: 1.25rem;
-  }
-
-  .tel\:inline {
-    display: inline;
-  }
-
-  .tel\:hidden {
-    display: none;
   }
 
   .tel\:h-full {
     height: 100%;
   }
 
-  .tel\:h-14 {
-    height: 3.5rem;
-  }
-
   .tel\:w-full {
     width: 100%;
-  }
-
-  .tel\:w-14 {
-    width: 3.5rem;
-  }
-
-  .tel\:text-center {
-    text-align: center;
   }
 }
 
 @media (min-width: 375px) {
   .telL\:ml-10 {
     margin-left: 2.5rem;
-  }
-
-  .telL\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .telL\:mr-14 {
-    margin-right: 3.5rem;
-  }
-
-  .telL\:ml-0 {
-    margin-left: 0px;
   }
 
   .telL\:w-full {
@@ -893,11 +800,6 @@ video {
   .telxl\:w-10 {
     width: 2.5rem;
   }
-
-  .telxl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 640px) {
@@ -907,24 +809,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:inline {
-    display: inline;
-  }
-
-  .md\:flex {
-    display: flex;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-3\/4 {
     width: 75%;
-  }
-
-  .md\:items-center {
-    align-items: center;
   }
 
   .md\:text-5xl {
