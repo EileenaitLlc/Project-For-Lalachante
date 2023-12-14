@@ -6,7 +6,7 @@
     <title>Document</title>
     <link href="output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+<body class="bg-gray-100 flex flex-col justify-center min-h-screen items-center">
     <div class="bg-gray-300 w-full h-16">
     </div>
     <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-2/5 2xl:w-2/5 4k:w-2/5">
@@ -27,50 +27,46 @@
                     Avant d’utiliser vos cagnottes, vous devez<br>valider votre profil en effectuant ces étapes.<br>Prenez de l’avance et faites-le maintenant!
                 </span>
             </div>
-            <div class="ml-20 mt-16">
-                <div class="flex flex-col">
-                    <span class="text-3xl font-bold">
-                        Email
-                    </span>
-                    <span class="text-sm">
-                        La validation de votre Email est nécessaire pour valider votre compte.
-                    </span>
-                </div>
-                <div class="flex justify-end pr-28 relative bottom-5">
-                    <svg class="inline w-6 h-6" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.1982 0.550781C9.15258 0.550781 0.198242 9.50512 0.198242 20.5508C0.198242 31.5964 9.15258 40.5508 20.1982 40.5508C31.2439 40.5508 40.1982 31.5964 40.1982 20.5508C40.1982 9.50512 31.2439 0.550781 20.1982 0.550781ZM20.1982 4.89648C28.8439 4.89648 35.8501 11.9073 35.8501 20.5508C35.8501 29.1943 28.8439 36.2027 20.1982 36.2027C11.5526 36.2027 4.54638 29.1943 4.54638 20.5508C4.54641 11.9073 11.5526 4.89648 20.1982 4.89648ZM27.8618 11.0537L16.27 22.6479L12.5102 18.8882L8.82128 22.5747L12.581 26.3345L16.2944 30.0478L19.981 26.3589L31.5752 14.7671L27.8618 11.0537Z" fill="#202020"/>
-                    </svg>
-                </div>
+            <div class="ml-5 telxl:ml-20 mt-16 mr-10">
+                <span class="text-3xl font-bold">
+                    Email
+                </span>
+                <span class="flex justify-between">
+                    La validation de votre Email est nécessaire pour valider<br>votre compte.
+                    <div class="md:mr-36">
+                        <svg class="w-8 h-8" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.1992 0.550781C9.15355 0.550781 0.199219 9.50512 0.199219 20.5508C0.199219 31.5964 9.15355 40.5508 20.1992 40.5508C31.2449 40.5508 40.1992 31.5964 40.1992 20.5508C40.1992 9.50512 31.2449 0.550781 20.1992 0.550781ZM20.1992 4.89648C28.8449 4.89648 35.8511 11.9073 35.8511 20.5508C35.8511 29.1943 28.8449 36.2027 20.1992 36.2027C11.5536 36.2027 4.54735 29.1943 4.54735 20.5508C4.54739 11.9073 11.5536 4.89648 20.1992 4.89648ZM27.8628 11.0537L16.271 22.6479L12.5112 18.8882L8.82225 22.5747L12.582 26.3345L16.2954 30.0478L19.982 26.3589L31.5762 14.7671L27.8628 11.0537Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                </span>
             </div>
-            <div class="ml-20 mt-16">
-                <div class="flex flex-col">
-                    <span class="text-3xl font-bold">
-                        Numéro de téléphone
-                    </span>
-                    <span class="text-sm">
-                        Il nous sert à sécuriser vos actions et vous répondre plus facilement.
-                    </span>
-                </div>
-                <div class="flex justify-end pr-28 relative bottom-5">
-                    <svg class="inline w-6 h-6" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.1982 0.550781C9.15258 0.550781 0.198242 9.50512 0.198242 20.5508C0.198242 31.5964 9.15258 40.5508 20.1982 40.5508C31.2439 40.5508 40.1982 31.5964 40.1982 20.5508C40.1982 9.50512 31.2439 0.550781 20.1982 0.550781ZM20.1982 4.89648C28.8439 4.89648 35.8501 11.9073 35.8501 20.5508C35.8501 29.1943 28.8439 36.2027 20.1982 36.2027C11.5526 36.2027 4.54638 29.1943 4.54638 20.5508C4.54641 11.9073 11.5526 4.89648 20.1982 4.89648ZM27.8618 11.0537L16.27 22.6479L12.5102 18.8882L8.82128 22.5747L12.581 26.3345L16.2944 30.0478L19.981 26.3589L31.5752 14.7671L27.8618 11.0537Z" fill="#202020"/>
-                    </svg>
-                </div>
+            <div class="ml-5 telxl:ml-20 mt-7 mr-10">
+                <span class="text-3xl font-bold">
+                    Numéro de téléphone
+                </span>
+                <span class="flex justify-between">
+                    Il nous sert à sécuriser vos actions et vous répondre<br>plus facilement.
+                    <div class="md:mr-36">
+                        <svg class="w-8 h-8" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 0C8.95433 0 0 8.95433 0 20C0 31.0457 8.95433 40 20 40C31.0456 40 40 31.0457 40 20C40 8.95433 31.0456 0 20 0ZM20 4.3457C28.6456 4.3457 35.6519 11.3565 35.6519 20C35.6519 28.6435 28.6456 35.6519 20 35.6519C11.3543 35.6519 4.34813 28.6435 4.34813 20C4.34817 11.3565 11.3543 4.3457 20 4.3457ZM27.6636 10.5029L16.0718 22.0972L12.312 18.3374L8.62303 22.0239L12.3828 25.7837L16.0962 29.4971L19.7827 25.8081L31.3769 14.2163L27.6636 10.5029Z" fill="black"/>
+                        </svg>                            
+                    </div>
+                </span>
             </div>
-            <div class="ml-20 mt-16 flex justify-between items-center">
-                <div class="flex flex-col">
-                    <span class="text-3xl font-bold">
-                        Pièce d’identité
-                    </span>
-                    <span class="text-sm">
-                        Elle permet de sécuriser vos transactions<br> bancaires ainsi que vos coordonnées.
-                    </span>
-                </div>
-                <div class="mr-36 mt-10">
-                    <button class="text-xl bg-zinc-300 w-40 h-10 hover:bg-zinc-500 rounded">
-                        Ajouter
-                    </button>
-                </div>
+            <div class="ml-5 telxl:ml-20 mt-7 mr-10">
+                <span class="text-3xl font-bold">
+                    Pièce d’identité
+                </span>
+                <span class="flex justify-between">
+                    Elle permet de sécuriser vos transactions bancaires ainsi que vos coordonnées.
+                    <div>
+                        <div class="md:mr-20 mt-1">
+                            <button class="text-xl bg-zinc-300 w-20 md:w-40 h-10 hover:bg-zinc-500 rounded">
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </span>
             </div>
         </main>
     </div>
