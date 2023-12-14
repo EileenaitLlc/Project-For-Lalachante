@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
 </head>
-<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+<body class="bg-gray-100 flex flex-col justify-center min-h-screen items-center">
     <div class="bg-gray-300 w-full h-16"></div>
     <div class="bg-white shadow-lg flex-grow w-full sm:w-full md:w-3/5 lg:w-3/6 xl:w-3/6 2xl:w-2/6 4k:w-2/5">
         <button class="pt-3 pl-3 bg-transparent inline-flex items-end">
@@ -31,42 +33,57 @@
                             Modifier le montant 
                         </span>
                     </div>
-                    <div class="text-left pt-10 ml-10">
-                        <label class="relative cursor-pointer">
-                            <input type="checkbox" value="" class="sr-only peer" checked>
-                            <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-white peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
-                        </label>
-                        <span class="text-base tel:text-lg">
+                    <div class="ml-10 mt-10 telxl:mr-36">
+                        <span class="flex justify-between text-left">
                             Masquer le montant
+                            <div>
+                                <svg class="w-10 h-10" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="60" y="60" width="60" height="60" transform="rotate(-180 60 60)" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_3024_20407" transform="scale(0.02)"/>
+                                    </pattern>
+                                    <image id="image0_3024_20407" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcElEQVR4nO2YO2sUURTHR3xHEdNoo6YLolhooY0uiFiJnYK2Pj+AD5ToVxC/hCjTbJjc+//fcVdXC0kiC4mVJraaTkEXWbuVYzZyHWfZ13hi5P7gNjN3zpz/Ofd5oigQCAQCgUBg7VKr1bY45/YbY0okz//NZowpyb/kn4U4n6bpNgDXSILkd5ItzQagSdJaa68mSTIySPQ3kLwOYEnbeXYW9VEExXG8vicRxphRktXVdpydBT0VH7uJGAOwqB1pkg8AnAKwJ47jTWma7gJwGMBNkjM53yyKr52G03aSbxQFNAHcieN4a7dRQvJMNsAA5sXnvM6xZhacc0ejPiiXyzsBWXN+s/U4O6RKisPpq7X2UDQA9Xp9I8kXvj3n3MlfHQDMKmbjQjQE6fL8+eTZnP75QqKjmI2ZVqu1LhoS59yNTHAOSDYmFLNxLiqAJElGSH7zbN8VIc+VRDRzV5kBIVn27FdFyHuljMwVJUIgec8L0jsR0lASgqhAAFzyhDTUhMgeULCQy579L5KiBSUh80UKIXnfs/1WHjxbi5MdwKRnu/L/LL8kDyoKmS1iQyR5y7crt8mVF9NaYkheHEZEtVrdTfKzF5xXvsITillpDHlofJmxdzybrieKYpaMMcf6EWGMGQXgMnYe/dFRVhRZIpUvVhO9FBUAnM05gcxJcaST6jGtfcXPDoCHzrnTzrm9ctVtz4MjJG+TfJ3z3UKlUtnXTf0OAFOaYvpsadfiwwpSciF5pV0YaP0j7YOcr3ouB+VsPCLItItlqs5jeR5NybmqlyJFT0j50lo7rlUytdaOA9hciPOBQCAQCAQC0arwA+9fpa/LGAQBAAAAAElFTkSuQmCC"/>
+                                    </defs>
+                                </svg>
+                            </div>
                         </span>
-                        <div>
-                            <label class="relative items-center cursor-pointer">
-                                <input type="checkbox" value="" class="sr-only peer" checked>
-                                <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-white peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
-                            </label>
-                            <span class="block text-lg">
-                                Rendre ma participation anonyme
-                            </span>
+                        <span class="flex justify-between text-left">
+                            Rendre ma participation anonyme
+                            <div>
+                                <svg class="w-10 h-10" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="60" y="60" width="60" height="60" transform="rotate(-180 60 60)" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_3024_20407" transform="scale(0.02)"/>
+                                    </pattern>
+                                    <image id="image0_3024_20407" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcElEQVR4nO2YO2sUURTHR3xHEdNoo6YLolhooY0uiFiJnYK2Pj+AD5ToVxC/hCjTbJjc+//fcVdXC0kiC4mVJraaTkEXWbuVYzZyHWfZ13hi5P7gNjN3zpz/Ofd5oigQCAQCgUBg7VKr1bY45/YbY0okz//NZowpyb/kn4U4n6bpNgDXSILkd5ItzQagSdJaa68mSTIySPQ3kLwOYEnbeXYW9VEExXG8vicRxphRktXVdpydBT0VH7uJGAOwqB1pkg8AnAKwJ47jTWma7gJwGMBNkjM53yyKr52G03aSbxQFNAHcieN4a7dRQvJMNsAA5sXnvM6xZhacc0ejPiiXyzsBWXN+s/U4O6RKisPpq7X2UDQA9Xp9I8kXvj3n3MlfHQDMKmbjQjQE6fL8+eTZnP75QqKjmI2ZVqu1LhoS59yNTHAOSDYmFLNxLiqAJElGSH7zbN8VIc+VRDRzV5kBIVn27FdFyHuljMwVJUIgec8L0jsR0lASgqhAAFzyhDTUhMgeULCQy579L5KiBSUh80UKIXnfs/1WHjxbi5MdwKRnu/L/LL8kDyoKmS1iQyR5y7crt8mVF9NaYkheHEZEtVrdTfKzF5xXvsITillpDHlofJmxdzybrieKYpaMMcf6EWGMGQXgMnYe/dFRVhRZIpUvVhO9FBUAnM05gcxJcaST6jGtfcXPDoCHzrnTzrm9ctVtz4MjJG+TfJ3z3UKlUtnXTf0OAFOaYvpsadfiwwpSciF5pV0YaP0j7YOcr3ouB+VsPCLItItlqs5jeR5NybmqlyJFT0j50lo7rlUytdaOA9hciPOBQCAQCAQC0arwA+9fpa/LGAQBAAAAAElFTkSuQmCC"/>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="flex justify-center mt-10">
+                        <span class="text-black text-4xl font-bold">
+                            Mes informations
+                        </span>
+                    </div>
+                    <div>
+                        <div class="flex justify-start ml-2 telxl:ml-40 telxl:mr-40 mt-10">
+                            <input type="text" placeholder="Nom" class="input border border-black text-black rounded px-4 hover:border-black bg-transparent w-80 h-12"/>
+                        </div>
+                        <div class="flex justify-start ml-2 telxl:ml-40 telxl:mr-40 mt-5">
+                            <input type="text" placeholder="Prénom" class="input border border-black text-black rounded px-4 hover:border-black bg-transparent w-80 h-12"/>
+                        </div>
+                        <div class="flex justify-start ml-2 telxl:ml-40 telxl:mr-40 mt-5">
+                            <input type="text" placeholder="Email" class="input border border-black text-black rounded px-4 hover:border-black bg-transparent w-80 h-12"/>
+                        </div>
+                        <div class="flex justify-start ml-2 telxl:ml-40 mt-5">
+                            <input id="datepicker" type="text" placeholder="Date de naissance" class="input border rounded px-4 dark:bg-white text-black border-black hover:border-black bg-transparent w-60 h-12" readonly/>
                         </div>
                     </div>
-                    <div class="flex justify-center m-3 ">
-                        <label class="block text-gray-600 mb-2"></label>
-                        <input type="text" id="end_date" name="end_date" placeholder="Prénom" class="border border-gray-700 rounded shadow-inner py-2 px-4 text-gray-700 w-80 h-10 focus:shadow-outline">
-                    </div>
-                    <div class="flex justify-center m-3">
-                        <label class="block text-gray-600 mb-2"></label>
-                        <input type="text" id="end_date" name="end_date" placeholder="Nom" class="border border-gray-700 rounded shadow-inner py-2 px-4 text-gray-700 w-80 h-10 focus:shadow-outline">
-                    </div>
-                    <div class="flex justify-center m-3">
-                        <label class="block text-gray-600 mb-2"></label>
-                        <input type="text" id="end_date" name="end_date" placeholder="Email" class="border border-gray-700 rounded shadow-inner py-2 px-4 text-gray-700 w-80 h-10 focus:shadow-outline">
-                    </div>
-                    <div class="flex justify-center m-3">
-                        <label class="block text-gray-600 mb-2"></label>
-                        <input type="text" id="end_date" name="end_date" placeholder="Date de naissance" class="border border-gray-700 rounded shadow-inner py-2 px-4 text-gray-700 w-40 h-10 focus:shadow-outline">
-                    </div>
-                    <div class="flex justify-center pt-7">
-                        <button class="bg-gray-300 w-64 h-12 rounded-md">
+                    <div class="flex justify-center mt-20 mb-5">
+                        <button class="text-base font-bold text-black w-40 h-8 bg-zinc-300 hover:bg-zinc-400 rounded">
                             Soutenir
                         </button>
                     </div>
@@ -74,5 +91,18 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var picker = new Pikaday({
+                field: document.getElementById('datepicker'),
+                format: 'DD/MM/YYYY',
+                yearRange: [1900, moment().year()],
+                showYearDropdown: true,
+            });
+        });
+    </script>
 </body>
 </html>
