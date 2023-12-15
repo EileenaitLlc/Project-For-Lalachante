@@ -7,54 +7,79 @@
     <link href="output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 flex items-center justify-center h-screen">
-    <div class="bg-white rounded-lg shadow-lg p-2 w-96">
-        <div class="flex justify-between mb-4">
-            <h1 class="text-6xl header-min font-semibold">Filtres</h1>
-            <button>&times;</button>
-        </div>
-        <div class="flex justify-start ml-10">
-            <span class="text-3xl text-black mb-6">
-                Types de Cause
-            </span>
-        </div>
-        <div class="flex justify-center">
-            <div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Humanitaires</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Santé</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">éducation</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Environnement</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Droits de l'homme</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Animaux</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Social</label>
-                </div>
-                <div class="flex items-center">
-                    <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                    <label for="link-checkbox" class="ms-2 text-lg font-medium text-black">Art et Culture</label>
-                </div>
-                <div class="flex justify-center">
-                    <button class="text-base ml-10 mr-10 w-80 h-8 bg-zinc-300 hover:bg-zinc-400 rounded">
-                        Appliquer
-                    </button>
+    <div class="font-sans bg-gray-100 flex items-center justify-center h-screen">
+        <div x-data="{ showPrivacyPolicy: true }">
+            <div x-show="showPrivacyPolicy" class="fixed z-10 inset-0 flex items-center justify-center">
+                <div class="prose max-w-screen-md p-6 overflow-y-auto pl-10" style="max-height: 70vh; background-color: #fff; border: 1px solid #e2e8f0; border-radius: 0.375rem; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);">
+                    <div class="flex justify-between mb-4">
+                        <h1 class="text-6xl text-black header-min font-semibold">Filtres</h1>
+                        <button class="flex items-center justify-center w-12 h-12 rounded-full">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 2.5C10.25 2.5 2.5 10.25 2.5 20C2.5 29.75 10.25 37.5 20 37.5C29.75 37.5 37.5 29.75 37.5 20C37.5 10.25 29.75 2.5 20 2.5ZM20 35C11.75 35 5 28.25 5 20C5 11.75 11.75 5 20 5C28.25 5 35 11.75 35 20C35 28.25 28.25 35 20 35Z" fill="black"/>
+                                <path d="M26.751 28.75L20.001 22L13.251 28.75L11.251 26.75L18.001 20L11.251 13.25L13.251 11.25L20.001 18L26.751 11.25L28.751 13.25L22.001 20L28.751 26.75L26.751 28.75Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex justify-start ml-10">
+                        <span class="text-3xl text-black mb-6">
+                            Types de Cause
+                        </span>
+                    </div>
+                    <div class="ml-20">
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Humanitaire
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Santé
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Éducation
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Environnement
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Droits de l'homme
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Animaux
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Social
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Art et Culture
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-4 py-3 sm:px-8 flex align-items justify-end p-4 gap-4 flex-row">
+                        <button @click="showPrivacyPolicy = false" type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-black text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 w-60 sm:w-72 sm:text-sm"> 
+                            Appliquer 
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
