@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+    <div class="bg-gray-300 w-full h-16">
+    </div>
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-2/5 2xl:w-2/5 4k:w-2/5">
+        <button class="pt-1 pl-1 bg-transparent inline-flex items-end relative tel:left-5 tel:top-7">
+            <img class="w-4" src="../arrow.png" alt="">
+        </button>
+        <main>
+            <header>
+                <h1 class="text-3xl ml-3 telL:ml-10 md:text-5xl text-black font-bold">
+                    Nouveau mot de<br>passe
+                </h1>
+            </header>
+            <div class="flex justify-center">
+                <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.625 0.250001C55.2331 0.248994 50.9021 1.27677 46.9789 3.25097C43.0557 5.22516 39.6495 8.09089 37.0333 11.6185C34.4171 15.1461 32.6635 19.2375 31.9132 23.5648C31.1629 27.8921 31.4366 32.335 32.7125 36.5375L0.25 69V87.75H19L51.4625 55.2875C55.3309 56.4617 59.4071 56.7882 63.4131 56.2446C67.4191 55.701 71.2609 54.3002 74.6765 52.1376C78.0922 49.975 81.0015 47.1015 83.2062 43.7128C85.4109 40.3242 86.8591 36.5 87.4522 32.501C88.0453 28.502 87.7693 24.4222 86.643 20.5395C85.5167 16.6568 83.5666 13.0626 80.9256 10.0018C78.2846 6.9409 75.0148 4.48538 71.339 2.80253C67.6631 1.11968 63.6677 0.249063 59.625 0.250001ZM59.625 50.25C57.4735 50.2488 55.3339 49.9308 53.275 49.3063L49.6906 48.2188L47.0438 50.8656L37.1031 60.8063L32.7937 56.5L28.375 60.9187L32.6844 65.2281L27.7281 70.1844L23.4187 65.875L19 70.2937L23.3094 74.6031L16.4125 81.5H6.5V71.5875L37.1312 40.9562L39.7812 38.3094L38.6937 34.725C37.3581 30.3218 37.4448 25.6096 38.9417 21.2586C40.4386 16.9077 43.2694 13.1395 47.0314 10.4901C50.7934 7.8407 55.295 6.44505 59.8959 6.50166C64.4968 6.55826 68.9628 8.06424 72.6584 10.8054C76.3541 13.5465 79.0913 17.3832 80.4807 21.7697C81.8701 26.1562 81.8409 30.8691 80.3973 35.2381C78.9537 39.607 76.1692 43.4095 72.4398 46.1047C68.7105 48.7998 64.2263 50.2504 59.625 50.25Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="ml-10 mt-20">
+                <span class="text-black text-2xl font-bold">
+                    Mot de passe
+                </span>
+            </div>
+            <div class="flex justify-start ml-10 mr-40 mt-20">
+                <svg class="mt-4 relative left-8 w-5 h-5" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.9 8.2127H14.6125V5.4377C14.6125 2.8877 12.55 0.825195 9.99999 0.825195C7.44999 0.825195 5.42499 2.8877 5.42499 5.4377V8.2127H3.13749C1.71249 8.2127 0.549988 9.3377 0.549988 10.6877V16.1252C0.549988 19.9877 3.88749 23.1377 7.97499 23.1377H12.1C16.1875 23.1377 19.4875 19.9502 19.4875 16.0127V10.6877C19.4875 9.3377 18.325 8.2127 16.9 8.2127ZM7.11249 5.4377C7.11249 3.8252 8.42499 2.5127 10.0375 2.5127C11.65 2.5127 12.9625 3.8252 12.9625 5.4377V8.2127H7.11249V5.4377ZM17.8 16.0127C17.8 19.0127 15.25 21.4502 12.1 21.4502H7.97499C4.82499 21.4502 2.23749 19.0502 2.23749 16.1252V10.6877C2.23749 10.2377 2.64999 9.9002 3.13749 9.9002H16.9C17.3875 9.9002 17.8 10.2377 17.8 10.6877V16.0127Z" fill="#111928"/>
+                    <path d="M11.5375 14.7754H8.46248C7.78748 14.7754 7.22498 15.3379 7.22498 16.0129V19.0879C7.22498 19.7629 7.78748 20.3254 8.46248 20.3254H11.5375C12.2125 20.3254 12.775 19.7629 12.775 19.0879V16.0129C12.775 15.3379 12.2125 14.7754 11.5375 14.7754ZM11.0875 18.6004H8.94998V16.4629H11.0875V18.6004Z" fill="#111928"/>
+                </svg>                    
+                <input type="text" placeholder="Nouveau mot de passe" class="input px-10 border border-black text-black hover:border-black bg-transparent md:w-full md:h-12"/>
+            </div>
+            <div class="flex justify-start ml-10 mr-40 mt-5">
+                <svg class="mt-4 relative left-8 w-5 h-5" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.9 8.2127H14.6125V5.4377C14.6125 2.8877 12.55 0.825195 9.99999 0.825195C7.44999 0.825195 5.42499 2.8877 5.42499 5.4377V8.2127H3.13749C1.71249 8.2127 0.549988 9.3377 0.549988 10.6877V16.1252C0.549988 19.9877 3.88749 23.1377 7.97499 23.1377H12.1C16.1875 23.1377 19.4875 19.9502 19.4875 16.0127V10.6877C19.4875 9.3377 18.325 8.2127 16.9 8.2127ZM7.11249 5.4377C7.11249 3.8252 8.42499 2.5127 10.0375 2.5127C11.65 2.5127 12.9625 3.8252 12.9625 5.4377V8.2127H7.11249V5.4377ZM17.8 16.0127C17.8 19.0127 15.25 21.4502 12.1 21.4502H7.97499C4.82499 21.4502 2.23749 19.0502 2.23749 16.1252V10.6877C2.23749 10.2377 2.64999 9.9002 3.13749 9.9002H16.9C17.3875 9.9002 17.8 10.2377 17.8 10.6877V16.0127Z" fill="#111928"/>
+                    <path d="M11.5375 14.7754H8.46248C7.78748 14.7754 7.22498 15.3379 7.22498 16.0129V19.0879C7.22498 19.7629 7.78748 20.3254 8.46248 20.3254H11.5375C12.2125 20.3254 12.775 19.7629 12.775 19.0879V16.0129C12.775 15.3379 12.2125 14.7754 11.5375 14.7754ZM11.0875 18.6004H8.94998V16.4629H11.0875V18.6004Z" fill="#111928"/>
+                </svg>                    
+                <input type="text" placeholder="Confirmer nouveau mot de passe" class="input px-10 border border-black text-black hover:border-black bg-transparent md:w-full md:h-12"/>
+            </div>
+            <div class="flex justify-center mt-10">
+                <div class="grid grid-cols-2 grid-rows-1 gap-4">
+                    <div class="ml-8">
+                        <ul class="list-disc">
+                            <li class="mb-3 text-lg text-black">8 caractères</li>
+                            <li class="mb-3 text-lg text-black">1 minuscule</li>
+                            <li class="mb-3 text-lg text-black">1 majuscule</li>
+                        </ul>
+                    </div>
+                    <div class="ml-10">
+                        <ul class="list-disc">
+                            <li class="mb-3 text-lg text-black">1 caractère spécial</li>
+                            <li class="mb-3 text-lg text-black">1 chiffre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-16">
+                <button class="text-lg text-black w-32 h-12 bg-zinc-300 hover:bg-zinc-400 rounded">
+                    Enregistrer
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
