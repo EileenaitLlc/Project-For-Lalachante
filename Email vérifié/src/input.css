@@ -1,19 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
 
-.header-min {
-    @apply pt-10 pl-10 text-left
-}
+    .header-min {
+        @apply pt-10 pl-10 text-left
+    }
 
-.h1-min {
-   @apply text-5xl font-sans font-bold text-slate-800 tel:text-4xl
-}
+    .h1-min {
+    @apply text-5xl font-sans font-bold text-slate-800 tel:text-4xl
+    }
 
-.header-maj {
-    @apply uppercase ml-10
-}
+    .header-maj {
+        @apply uppercase ml-10
+    }
 
-.h1-maj {
-    @apply text-3xl  font-bold
-}
+    .h1-maj {
+        @apply text-3xl  font-bold
+    }
