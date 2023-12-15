@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="font-sans bg-gray-100 flex items-center justify-center min-h-screen">
+        <div x-data="{ showPrivacyPolicy: true }">
+            <div class="fixed z-10 inset-0 flex items-center justify-center">
+                <div class="prose max-w-screen-md overflow-y-visible p-6 pl-10" style="max-height: 70vh; background-color: #fff; border: 1px solid #e2e8f0; border-radius: 0.375rem; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);">
+                    <div class="flex justify-between">
+                        <span class="text-6xl text-black header-min font-semibold flex">
+                            Filtres
+                            <svg class="mt-5" width="48" height="46" viewBox="0 0 48 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22.6128C11.1716 22.6128 10.5 21.9801 10.5 21.1995L10.5 7.06661C10.5 6.28607 11.1716 5.65332 12 5.65332C12.8285 5.65332 13.5 6.28608 13.5 7.06662L13.5 21.1995C13.5 21.9801 12.8284 22.6128 12 22.6128Z" fill="#0F172A"/>
+                                <path d="M36 22.6128C35.1716 22.6128 34.5 21.9801 34.5 21.1995L34.5 7.06661C34.5 6.28607 35.1716 5.65332 36 5.65332C36.8285 5.65332 37.5 6.28608 37.5 7.06662L37.5 21.1995C37.5 21.9801 36.8284 22.6128 36 22.6128Z" fill="#0F172A"/>
+                                <path d="M13.5 38.159L13.5 35.3325C13.5 34.5519 12.8284 33.9192 12 33.9192C11.1716 33.9192 10.5 34.5519 10.5 35.3325L10.5 38.1591C10.5 38.9396 11.1716 39.5724 12 39.5723C12.8285 39.5723 13.5 38.9396 13.5 38.159Z" fill="#0F172A"/>
+                                <path d="M37.5 35.3325L37.5 38.159C37.5 38.9396 36.8285 39.5723 36 39.5723C35.1716 39.5724 34.5 38.9396 34.5 38.1591L34.5 35.3325C34.5 34.5519 35.1716 33.9192 36 33.9192C36.8284 33.9192 37.5 34.5519 37.5 35.3325Z" fill="#0F172A"/>
+                                <path d="M25.5 9.89319L25.5 7.0666C25.5 6.28606 24.8284 5.65331 24 5.65332C23.1716 5.65333 22.5 6.28609 22.5 7.06663L22.5 9.89321C22.5 10.6738 23.1716 11.3065 24 11.3065C24.8285 11.3065 25.5 10.6737 25.5 9.89319Z" fill="#0F172A"/>
+                                <path d="M24 39.5723C23.1716 39.5723 22.5 38.9396 22.5 38.1591V24.0261C22.5 23.2456 23.1716 22.6128 24 22.6128C24.8284 22.6128 25.5 23.2456 25.5 24.0261V38.1591C25.5 38.9396 24.8284 39.5723 24 39.5723Z" fill="#0F172A"/>
+                                <path d="M7.5 28.266C7.5 30.6076 9.51472 32.5059 12 32.5059C14.4853 32.5059 16.5 30.6076 16.5 28.266C16.5 25.9244 14.4853 24.0261 12 24.0261C9.51472 24.0261 7.5 25.9244 7.5 28.266Z" fill="#0F172A"/>
+                                <path d="M24 21.1995C21.5147 21.1995 19.5 19.3013 19.5 16.9597C19.5 14.618 21.5147 12.7198 24 12.7198C26.4853 12.7198 28.5 14.618 28.5 16.9597C28.5 19.3013 26.4853 21.1995 24 21.1995Z" fill="#0F172A"/>
+                                <path d="M31.5 28.266C31.5 30.6076 33.5147 32.5059 36 32.5059C38.4853 32.5059 40.5 30.6076 40.5 28.266C40.5 25.9244 38.4853 24.0261 36 24.0261C33.5147 24.0261 31.5 25.9244 31.5 28.266Z" fill="#0F172A"/>
+                            </svg>                                
+                        </span>
+                        <button class="flex items-center justify-center w-12 h-12 rounded-full">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 2.5C10.25 2.5 2.5 10.25 2.5 20C2.5 29.75 10.25 37.5 20 37.5C29.75 37.5 37.5 29.75 37.5 20C37.5 10.25 29.75 2.5 20 2.5ZM20 35C11.75 35 5 28.25 5 20C5 11.75 11.75 5 20 5C28.25 5 35 11.75 35 20C35 28.25 28.25 35 20 35Z" fill="black"/>
+                                <path d="M26.751 28.75L20.001 22L13.251 28.75L11.251 26.75L18.001 20L11.251 13.25L13.251 11.25L20.001 18L26.751 11.25L28.751 13.25L22.001 20L28.751 26.75L26.751 28.75Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex justify-start ml-10">
+                        <span class="text-3xl whitespace-nowrap text-black mb-2">
+                            Types de catégories
+                        </span>
+                    </div>
+                    <div class="ml-20">
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Expérience
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Partage
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Ambition
+                            </span>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Fun
+                            </span>
+                        </div>
+                    </div>
+                        <div class="flex justify-start ml-10">
+                            <span class="text-3xl whitespace-nowrap text-black mb-3">
+                                Style Expérience
+                            </span>
+                        </div>
+                    <div class="ml-20">
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Pop
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Chanson
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Kids
+                            </span>
+                        </div>
+                        <div class="flex items-center mb-5">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Urban
+                            </span>
+                        </div>
+                    </div>
+                        <div class="flex justify-start ml-10">
+                            <span class="text-3xl whitespace-nowrap text-black mb-2">
+                                Type de Chansons
+                            </span>
+                        </div>
+                    <div class="ml-20">
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Composition
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Adaptation
+                            </span>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="link-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <span class="ml-2 text-black">
+                                Cover
+                            </span>
+                        </div>
+                    </div>
+                    <div class="px-4 py-3 sm:px-8 flex flex-col sm:flex-row items-center justify-center">
+                        <button type="button" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-zinc-300 text-base font-medium text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 w-60 sm:w-72 sm:text-sm"> 
+                            Appliquer 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
