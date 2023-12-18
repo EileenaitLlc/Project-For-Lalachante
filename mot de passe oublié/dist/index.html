@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+    <div class="bg-gray-300 w-full h-16">
+    </div>
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-2/5 2xl:w-2/5 4k:w-2/5">
+        <button class="pt-1 pl-1 bg-transparent inline-flex items-end relative tel:left-5 tel:top-7">
+            <img class="w-4" src="../arrow.png" alt="">
+        </button>
+        <main>
+            <header>
+                <h1 class="text-3xl ml-3 telL:ml-10 md:text-5xl text-black font-bold">
+                    Retrouver mot de<br>passe
+                </h1>
+            </header>
+            <div class="flex justify-center">
+                <svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M59.625 0.250001C55.2331 0.248994 50.9021 1.27677 46.9789 3.25097C43.0557 5.22516 39.6495 8.09089 37.0333 11.6185C34.4171 15.1461 32.6635 19.2375 31.9132 23.5648C31.1629 27.8921 31.4366 32.335 32.7125 36.5375L0.25 69V87.75H19L51.4625 55.2875C55.3309 56.4617 59.4071 56.7882 63.4131 56.2446C67.4191 55.701 71.2609 54.3002 74.6765 52.1376C78.0922 49.975 81.0015 47.1015 83.2062 43.7128C85.4109 40.3242 86.8591 36.5 87.4522 32.501C88.0453 28.502 87.7693 24.4222 86.643 20.5395C85.5167 16.6568 83.5666 13.0626 80.9256 10.0018C78.2846 6.9409 75.0148 4.48538 71.339 2.80253C67.6631 1.11968 63.6677 0.249063 59.625 0.250001ZM59.625 50.25C57.4735 50.2488 55.3339 49.9308 53.275 49.3063L49.6906 48.2188L47.0438 50.8656L37.1031 60.8063L32.7937 56.5L28.375 60.9187L32.6844 65.2281L27.7281 70.1844L23.4187 65.875L19 70.2937L23.3094 74.6031L16.4125 81.5H6.5V71.5875L37.1312 40.9562L39.7812 38.3094L38.6937 34.725C37.3581 30.3218 37.4448 25.6096 38.9417 21.2586C40.4386 16.9077 43.2694 13.1395 47.0314 10.4901C50.7934 7.8407 55.295 6.44505 59.8959 6.50166C64.4968 6.55826 68.9628 8.06424 72.6584 10.8054C76.3541 13.5465 79.0913 17.3832 80.4807 21.7697C81.8701 26.1562 81.8409 30.8691 80.3973 35.2381C78.9537 39.607 76.1692 43.4095 72.4398 46.1047C68.7105 48.7998 64.2263 50.2504 59.625 50.25Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="flex justify-center mt-32">
+                <span class="text-base tel:text-center telxl:text-2xl w-full telxl:ml-28 telxl:mr-28 text-black">
+                    Saisissez votre numéro de téléphone ou votre adresse e-mail de récupération
+                </span>
+            </div>
+            <div class="flex justify-center telxl:ml-20 mr-10 telxl:mr-40 mt-20">
+                <svg class="mt-4 relative left-8 w-5 h-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9999 3.59961H2.99995C1.72495 3.59961 0.637451 4.64961 0.637451 5.96211V18.1121C0.637451 19.3871 1.68745 20.4746 2.99995 20.4746H20.9999C22.275 20.4746 23.3624 19.4246 23.3624 18.1121V5.92461C23.3624 4.64961 22.275 3.59961 20.9999 3.59961ZM20.9999 5.28711C21.0374 5.28711 21.0749 5.28711 21.1124 5.28711L12 11.1371L2.88745 5.28711C2.92495 5.28711 2.96245 5.28711 2.99995 5.28711H20.9999ZM20.9999 18.7121H2.99995C2.62495 18.7121 2.32495 18.4121 2.32495 18.0371V6.93711L11.0999 12.5621C11.3625 12.7496 11.6624 12.8246 11.9625 12.8246C12.2625 12.8246 12.5625 12.7496 12.825 12.5621L21.5999 6.93711V18.0746C21.6749 18.4496 21.3749 18.7121 20.9999 18.7121Z" fill="#111928"/>
+                </svg>
+                <input type="text" placeholder="dervainllc@gmail.com" class="input px-10 telxl:px-10 border border-black text-black hover:border-black bg-transparent w-full h-12"/>
+            </div>
+            <div class="flex justify-center mt-40">
+                <button class="text-lg text-black w-44 h-12 bg-zinc-300 hover:bg-zinc-400 rounded">
+                    Suivant
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
