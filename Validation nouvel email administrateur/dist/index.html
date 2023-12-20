@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+    <div class="bg-gray-300 w-full h-16">
+    </div>
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-2/5 2xl:w-2/5 4k:w-2/5">
+        <button class="pt-1 pl-1 bg-transparent inline-flex items-end relative tel:left-5 tel:top-7">
+            <img class="w-4" src="../arrow.png" alt="">
+        </button>
+        <main>
+            <header>
+                <h1 class="text-3xl ml-3 telL:ml-10 md:text-5xl text-black font-bold mt-5">
+                    Validation email
+                </h1>
+            </header>
+            <div class="flex justify-center mt-20">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.2625 29.0719C6.42112 25.4522 7.97073 22.0333 10.5883 19.5281C13.2058 17.023 16.6893 15.6247 20.3125 15.625H79.6875C83.3107 15.6247 86.7942 17.023 89.4117 19.5281C92.0293 22.0333 93.5789 25.4522 93.7375 29.0719L89.125 31.6344L50 52.7L10.875 31.6344L6.2625 29.0719ZM6.25 36.2125V70.3125C6.25 74.0421 7.73158 77.619 10.3688 80.2562C13.006 82.8934 16.5829 84.375 20.3125 84.375H79.6875C83.4171 84.375 86.994 82.8934 89.6312 80.2562C92.2684 77.619 93.75 74.0421 93.75 70.3125V36.2125L92.1063 37.1281L51.4813 59.0031C51.026 59.2482 50.517 59.3765 50 59.3765C49.483 59.3765 48.974 59.2482 48.5187 59.0031L7.85625 37.1062L6.25 36.2125Z" fill="black"/>
+                </svg>                    
+            </div>
+            <div class="flex telxl:ml-10 mt-10 items-center">
+                <svg class="w-28 h-28 ml-2" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0ZM30 6.51855C42.9684 6.51855 53.4778 17.0348 53.4778 30C53.4778 42.9653 42.9684 53.4778 30 53.4778C17.0315 53.4778 6.5222 42.9653 6.5222 30C6.52225 17.0348 17.0315 6.51855 30 6.51855ZM41.4953 15.7544L24.1077 33.1457L18.468 27.5061L12.9346 33.0359L18.5742 38.6755L24.1443 44.2456L29.6741 38.7122L47.0654 21.3245L41.4953 15.7544Z" fill="black"/>
+                </svg>
+                <span class="text-black text-base telxl:text-xl ml-5 mt-5 xl:line-clamp-4 xl:mr-20">
+                    Un email vient d'être envoyé à l’adresse <span class="text-red-500 inline">email</span>. Une fois validé <span class="text-red-500 inline">Prénom Nom</span> n’aura qu’a suivre les instructions contenues pour accéder et pouvoir administrer le compte.
+                </span>
+            </div>
+            
+            <div class="flex justify-center mt-20">
+                <button class="text-xl text-black w-48 h-12 bg-zinc-300 hover:bg-zinc-400 rounded">
+                    Suivant
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
