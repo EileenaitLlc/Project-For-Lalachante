@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+    <div class="bg-gray-300 w-full h-16">
+    </div>
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-2/5 2xl:w-2/5 4k:w-2/5">
+        <button class="pt-1 pl-1 bg-transparent inline-flex items-end relative tel:left-5 tel:top-7">
+            <img class="w-4" src="../arrow.png" alt="">
+        </button>
+        <main>
+            <header>
+                <h1 class="text-3xl ml-3 telL:ml-10 md:text-5xl text-black font-bold">
+                    Inscription Cause
+                </h1>
+            </header>
+            <div class="flex justify-center mt-10">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="100" height="100" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_4203_18975" transform="scale(0.01)"/>
+                    </pattern>
+                    <image id="image0_4203_18975" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                </svg>
+            </div>
+            <div class="flex justify-center ml-10 mr-20 mt-10">
+                <span class="text-lg text-black">
+                    Si vous avez déjà un compte lalachante <a href="" class="text-black font-semibold"><u>connectez-vous</u></a> à votre compte, pour créer une cause
+                </span>
+            </div>
+            <div class="flex justify-center ml-10 mr-10 telxl:mr-40 mt-10">
+                <input type="text" placeholder="Nom de l'organisme" class="input px-4 border border-black rounded text-black hover:border-black bg-transparent w-full h-12"/>
+            </div>
+            <div class="flex justify-start ml-10 mt-5">
+                <input type="text" placeholder="Email" class="input px-4 border border-black text-black rounded hover:border-black bg-transparent w-60 telL:w-72 h-12"/>
+            </div>
+            <div class="flex justify-center ml-10 mr-10 telxl:mr-40 mt-5">
+                <label class="inline-flex bg-white border border-black rounded-md text-base w-full h-12">
+                    <span class="w-16 ml-6 pt-3 border-r border-black">
+                        +33
+                    </span>
+                    <input type="text" placeholder="Téléphone Contact" class="px-4 rounded w-full text-black bg-transparent"/>
+                </label>
+            </div>
+            <div class="flex justify-center ml-10 mr-10 telxl:mr-40 mt-5">
+                <input type="text" placeholder="Adresse siege social" class="input px-4 border border-black rounded text-black hover:border-black bg-transparent w-full h-12"/>
+            </div>
+            <div class="flex justify-center ml-10 mr-10 telxl:mr-40 mt-5">
+                <input type="text" placeholder="Ville" class="input px-4 border border-black text-black rounded hover:border-black bg-transparent w-full h-12"/>
+            </div>
+            <div class="flex justify-start ml-10 mt-5">
+                <input type="text" placeholder="Code postal" class="input px-4 border border-black text-black rounded hover:border-black bg-transparent w-60 telL:w-72 h-12"/>
+            </div>
+            <div class="flex justify-center mt-20">
+                <button class="text-lg text-black w-40 h-12 bg-zinc-300 hover:bg-zinc-400 rounded">
+                    Continuer
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

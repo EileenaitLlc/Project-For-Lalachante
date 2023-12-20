@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
+.bouton {
     @apply rounded-xl px-1 py-2 hover:shadow-md w-20 h-20;
 }
