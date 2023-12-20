@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-100 flex flex-col justify-center h-full items-center">
+    <div class="bg-gray-300 w-full h-16">
+    </div>
+    <div class="bg-white shadow-lg flex-grow w-full tel:w-full tel:h-full telL:w-full sm:w-5/6 md:w-3/4 lg:w-4/6 xl:w-2/5 2xl:w-2/5 4k:w-2/5">
+        <button class="pt-1 pl-1 bg-transparent inline-flex items-end relative tel:left-5 tel:top-7">
+            <img class="w-4" src="../arrow.png" alt="">
+        </button>
+        <main>
+            <header>
+                <h1 class="text-3xl ml-3 telL:ml-10 md:text-5xl text-black font-bold">
+                    Connexion
+                </h1>
+            </header>
+            <div class="flex justify-center mt-5">
+                <svg class="w-20 h-20" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 43.2812C61.5625 43.2812 70.9375 34.2188 70.9375 22.9688C70.9375 11.7188 61.5625 2.65625 50 2.65625C38.4375 2.65625 29.0625 11.7188 29.0625 22.9688C29.0625 34.2188 38.4375 43.2812 50 43.2812ZM50 9.84375C57.6562 9.84375 63.9062 15.7813 63.9062 23.125C63.9062 30.4688 57.6562 36.4062 50 36.4062C42.3437 36.4062 36.0937 30.4688 36.0937 23.125C36.0937 15.7813 42.3437 9.84375 50 9.84375Z" fill="#111928"/>
+                    <path d="M60.1562 50.3125H39.8437C23.125 50.3125 9.53125 64.0625 9.53125 80.7813V93.75C9.53125 95.625 11.0937 97.3438 13.125 97.3438C15.1562 97.3438 16.7187 95.7813 16.7187 93.75V80.7813C16.7187 67.9688 27.1875 57.3438 40.1562 57.3438H60.3125C73.125 57.3438 83.75 67.8125 83.75 80.7813V93.75C83.75 95.625 85.3125 97.3438 87.3438 97.3438C89.375 97.3438 90.9375 95.7813 90.9375 93.75V80.7813C90.4688 64.0625 76.875 50.3125 60.1562 50.3125Z" fill="#111928"/>
+                </svg>                    
+            </div>
+            <div class="ml-10 mt-20">
+                <span class="text-black text-2xl font-bold">
+                    Saisissez vos infos
+                </span>
+            </div>
+            <div class="flex justify-start ml-10 mr-10 telxl:mr-40 mt-20">                   
+                <input type="text" placeholder="Email" class="input px-10 border border-black text-black hover:border-black bg-transparent w-full h-12"/>
+            </div>
+            <div class="flex justify-start ml-10 mr-10 telxl:mr-40 mt-5">                   
+                <input type="text" placeholder="Mot de passe" class="input px-10 border border-black text-black hover:border-black bg-transparent w-full h-12"/>
+            </div>
+            <div class="ml-10">
+                <a href="" class="text-sm text-black font-semibold border-b border-black">Mot de passe oublié?</a>
+            </div>
+            <div class="flex justify-center mt-36">
+                <button class="text-lg text-white w-60 h-14 bg-zinc-500 hover:bg-zinc-400">
+                    Continuer
+                </button>
+            </div>
+            <div class="flex justify-center mt-10">
+                <a href="" class="text-lg text-black font-semibold">Pas de compte?<b class="border-b border-black text-black font-bold"> Inscrivez-vous.</b></a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
